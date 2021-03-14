@@ -3322,8 +3322,8 @@
         "affectsGlobalScope": false
       },
       "../src/infrastructure/data-source/entities/client.entity.ts": {
-        "version": "a487626185d64b593699eed7eb058bb6398776f5074ab0e9d0f08ea13efe272b",
-        "signature": "6c4629f725fa50aa03896ee4d2b07851167213981d6e239b2a5e1d2c5f3dc574",
+        "version": "f78a4579418dfd55f764881cf919989c440084a494e9de464f76d000ec335dba",
+        "signature": "addbea7385ec7a4578b76eda5f39ed49006c71ac96e34655663b46971f4109c2",
         "affectsGlobalScope": false
       },
       "../src/infrastructure/data-source/postgres/database.module.ts": {
@@ -3514,6 +3514,21 @@
       "../src/main.ts": {
         "version": "e25d9bd8f80b6ffbcc8826ed1b407e747e4fbe346c5bab62cbe5837da4eeb189",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../src/core/models/chat-client.model.ts": {
+        "version": "f264da8072bbe86b01f3eb1ec92ce8b55a0b7191cae48b992e77f5f7d33649b9",
+        "signature": "a329b390166f8f1a30ca5fc65672bf5141f0141440bd8323acd763e71ff62ee9",
+        "affectsGlobalScope": false
+      },
+      "../src/core/models/chat-message.model.ts": {
+        "version": "ef9a2ae02fb220513270f42b68d463a2c6222024453d2b43999df92db0d833c0",
+        "signature": "66a9259fb0086f89839fea32843537df493d2dba5f4bfb88d0131181d389e912",
+        "affectsGlobalScope": false
+      },
+      "../src/api/dtos/welcome.dto.ts": {
+        "version": "c3d6313f6be4068ac920e08f0f0c37a61d7e10b6fa7babf6e63c448a84d8b0a3",
+        "signature": "7fc06891a97032f18e35d0e60eb86a9bb1ff826a5590b0779f36ce0710750c08",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -6494,6 +6509,10 @@
         "../node_modules/typeorm/metadata/relationmetadata.d.ts",
         "../node_modules/typeorm/query-runner/queryrunner.d.ts"
       ],
+      "../src/api/dtos/welcome.dto.ts": [
+        "../src/core/models/chat-client.model.ts",
+        "../src/core/models/chat-message.model.ts"
+      ],
       "../src/app.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/app.service.ts"
@@ -9199,6 +9218,10 @@
         "../node_modules/typeorm/metadata/entitymetadata.d.ts",
         "../node_modules/typeorm/metadata/relationmetadata.d.ts",
         "../node_modules/typeorm/query-runner/queryrunner.d.ts"
+      ],
+      "../src/api/dtos/welcome.dto.ts": [
+        "../src/core/models/chat-client.model.ts",
+        "../src/core/models/chat-message.model.ts"
       ],
       "../src/app.controller.ts": [
         "../src/app.service.ts"

@@ -4,7 +4,10 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity()
 export class Client {
   @PrimaryGeneratedColumn()
-  id: number;
+  public id: number;
+
   @Column()
-  nickname: string;
+  public nickname: string;
 }
+
+export default Client;

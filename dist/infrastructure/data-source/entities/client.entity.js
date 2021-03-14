@@ -25,4 +25,5 @@ Client = __decorate([
     typeorm_1.Entity()
 ], Client);
 exports.Client = Client;
+exports.default = Client;
 //# sourceMappingURL=client.entity.js.map

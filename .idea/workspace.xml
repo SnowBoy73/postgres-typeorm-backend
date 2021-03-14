@@ -19,11 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ac0860e-0d8c-4331-8a97-2133a290306a" name="Default Changelist" comment="" />
+    <list default="true" id="0ac0860e-0d8c-4331-8a97-2133a290306a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/core/models/chat-message.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/data-source/entities/client.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/data-source/entities/client.entity.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,7 +66,7 @@
       <updated>1615659490489</updated>
       <workItem from="1615659491673" duration="3551000" />
       <workItem from="1615669572417" duration="968000" />
-      <workItem from="1615731843369" duration="4900000" />
+      <workItem from="1615731843369" duration="6605000" />
     </task>
     <servers />
   </component>
