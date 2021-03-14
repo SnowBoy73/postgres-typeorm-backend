@@ -9,11 +9,25 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const chat_module_1 = require("./chat/chat.module");
+const config_1 = require("@nestjs/config");
+const Joi = require("@hapi/joi");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
-        imports: [chat_module_1.ChatModule],
+        imports: [
+            chat_module_1.ChatModule,
+            config_1.ConfigModule.forRoot({
+                validationSchema: Joi.object({
+                    POSTGRES_HOST: Joi.string().required(),
+                    POSTGRES_PORT: Joi.number().required(),
+                    POSTGRES_USER: Joi.string().required(),
+                    POSTGRES_PASSWORD: Joi.string().required(),
+                    POSTGRES_DB: Joi.string().required(),
+                    PORT: Joi.number(),
+                }),
+            }),
+        ],
         controllers: [],
         providers: [],
     })
