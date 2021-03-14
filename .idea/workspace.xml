@@ -20,8 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ac0860e-0d8c-4331-8a97-2133a290306a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/core/models/chat-message.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/core/models/chat-message.model.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/core/models/chat-message.model.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infrastructure/data-source/entities/client.entity.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infrastructure/data-source/entities/client.entity.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chat/chat.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/chat/chat.gateway.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chat/shared/welcome.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/chat/shared/welcome.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/models/chat-message.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/models/chat-message.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/infrastructure/data-source/entities/client.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/data-source/entities/client.entity.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +71,7 @@
       <updated>1615659490489</updated>
       <workItem from="1615659491673" duration="3551000" />
       <workItem from="1615669572417" duration="968000" />
-      <workItem from="1615731843369" duration="6605000" />
+      <workItem from="1615731843369" duration="7658000" />
     </task>
     <servers />
   </component>
@@ -83,5 +88,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615747339284">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1615747339284" />
   </component>
 </project>

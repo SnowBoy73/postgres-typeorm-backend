@@ -1,4 +1,7 @@
+import {ChatClientDto} from '../../chat/shared/chat-client.dto';
+
 export interface ChatMessage {
-    id: string;
-    // not sure here
+    message: string;
+    sender: ChatClientDto;
+    sentAt: string;
 }

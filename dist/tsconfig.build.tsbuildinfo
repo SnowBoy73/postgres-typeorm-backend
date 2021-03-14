@@ -1576,13 +1576,23 @@
         "signature": "f098d1a831c1c3c841758e4e4edd90d00053a6ba447d1d95932ffdf330e9c60d",
         "affectsGlobalScope": false
       },
-      "../src/chat/shared/welcome.dto.ts": {
-        "version": "adddf3595ea4539230a7e0fa08e8603d28ed069672d1321921bd867123b4e12c",
-        "signature": "d7e6ccb323e5f48b9215fc3bac5b743346de249e69ddd6ea3e258d821c499f37",
+      "../src/core/models/chat-client.model.ts": {
+        "version": "f264da8072bbe86b01f3eb1ec92ce8b55a0b7191cae48b992e77f5f7d33649b9",
+        "signature": "a329b390166f8f1a30ca5fc65672bf5141f0141440bd8323acd763e71ff62ee9",
+        "affectsGlobalScope": false
+      },
+      "../src/core/models/chat-message.model.ts": {
+        "version": "ded34cbd533c37beb69e0f4c50e6a7d27ea955bfd62bbe9f7814674d9a5fe491",
+        "signature": "3cdfa8a32eaa13b072fd27225d31e76b9374dcd6fd37457153e40324ee6e1bfd",
+        "affectsGlobalScope": false
+      },
+      "../src/api/dtos/welcome.dto.ts": {
+        "version": "c3d6313f6be4068ac920e08f0f0c37a61d7e10b6fa7babf6e63c448a84d8b0a3",
+        "signature": "7fc06891a97032f18e35d0e60eb86a9bb1ff826a5590b0779f36ce0710750c08",
         "affectsGlobalScope": false
       },
       "../src/chat/chat.gateway.ts": {
-        "version": "1b97e11f19bd7540ca0fc1113b51925dfed8bac0e6f143aa4709f766ead733aa",
+        "version": "068129411c7d19d1d4b6192ffe2dd90ab5b4fa0e8a9ea629c94c7d1f502156d0",
         "signature": "fc0569181fbcfe01d400045876ccb18bc3410cccf729e2672fcf11f3ae4acbd8",
         "affectsGlobalScope": false
       },
@@ -3322,7 +3332,7 @@
         "affectsGlobalScope": false
       },
       "../src/infrastructure/data-source/entities/client.entity.ts": {
-        "version": "f78a4579418dfd55f764881cf919989c440084a494e9de464f76d000ec335dba",
+        "version": "0b9314ebe788199fe86e1a86a89bee33294ab2d015fb67455460fe31c20aff6c",
         "signature": "addbea7385ec7a4578b76eda5f39ed49006c71ac96e34655663b46971f4109c2",
         "affectsGlobalScope": false
       },
@@ -3516,19 +3526,9 @@
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
-      "../src/core/models/chat-client.model.ts": {
-        "version": "f264da8072bbe86b01f3eb1ec92ce8b55a0b7191cae48b992e77f5f7d33649b9",
-        "signature": "a329b390166f8f1a30ca5fc65672bf5141f0141440bd8323acd763e71ff62ee9",
-        "affectsGlobalScope": false
-      },
-      "../src/core/models/chat-message.model.ts": {
-        "version": "ef9a2ae02fb220513270f42b68d463a2c6222024453d2b43999df92db0d833c0",
-        "signature": "66a9259fb0086f89839fea32843537df493d2dba5f4bfb88d0131181d389e912",
-        "affectsGlobalScope": false
-      },
-      "../src/api/dtos/welcome.dto.ts": {
-        "version": "c3d6313f6be4068ac920e08f0f0c37a61d7e10b6fa7babf6e63c448a84d8b0a3",
-        "signature": "7fc06891a97032f18e35d0e60eb86a9bb1ff826a5590b0779f36ce0710750c08",
+      "../src/chat/shared/welcome.dto.ts": {
+        "version": "adddf3595ea4539230a7e0fa08e8603d28ed069672d1321921bd867123b4e12c",
+        "signature": "d7e6ccb323e5f48b9215fc3bac5b743346de249e69ddd6ea3e258d821c499f37",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -6530,9 +6530,9 @@
       "../src/chat/chat.gateway.ts": [
         "../node_modules/@nestjs/websockets/index.d.ts",
         "../node_modules/@types/socket.io/index.d.ts",
+        "../src/api/dtos/welcome.dto.ts",
         "../src/chat/shared/chat-message.dto.ts",
-        "../src/chat/shared/chat.service.ts",
-        "../src/chat/shared/welcome.dto.ts"
+        "../src/chat/shared/chat.service.ts"
       ],
       "../src/chat/chat.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -6551,8 +6551,10 @@
         "../src/chat/shared/chat-client.dto.ts",
         "../src/chat/shared/chat-message.dto.ts"
       ],
+      "../src/core/models/chat-message.model.ts": [
+        "../src/chat/shared/chat-client.dto.ts"
+      ],
       "../src/infrastructure/data-source/entities/client.entity.ts": [
-        "../node_modules/@types/hapi__joi/index.d.ts",
         "../node_modules/typeorm/index.d.ts"
       ],
       "../src/infrastructure/data-source/postgres/database.module.ts": [
@@ -9241,6 +9243,9 @@
       "../src/chat/shared/welcome.dto.ts": [
         "../src/chat/shared/chat-client.dto.ts",
         "../src/chat/shared/chat-message.dto.ts"
+      ],
+      "../src/core/models/chat-message.model.ts": [
+        "../src/chat/shared/chat-client.dto.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [

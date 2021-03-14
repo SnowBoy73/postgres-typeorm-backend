@@ -9,7 +9,9 @@ import {
 } from '@nestjs/websockets';
 import { Socket } from 'socket.io';
 import { ChatService } from './shared/chat.service';
-import { WelcomeDto } from './shared/welcome.dto';
+
+import { WelcomeDto} from '../api/dtos/welcome.dto';
+// import { WelcomeDto } from './shared/welcome.dto';
 import { ChatMessageDto } from './shared/chat-message.dto';
 
 @WebSocketGateway()
