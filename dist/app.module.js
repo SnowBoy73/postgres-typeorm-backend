@@ -11,6 +11,7 @@ const common_1 = require("@nestjs/common");
 const chat_module_1 = require("./chat/chat.module");
 const config_1 = require("@nestjs/config");
 const Joi = require("@hapi/joi");
+const database_module_1 = require("./infrastructure/data-source/postgres/database.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -27,6 +28,7 @@ AppModule = __decorate([
                     PORT: Joi.number(),
                 }),
             }),
+            database_module_1.DatabaseModule,
         ],
         controllers: [],
         providers: [],

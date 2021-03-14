@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ac0860e-0d8c-4331-8a97-2133a290306a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/app.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.module.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/app.module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.module.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +61,7 @@
       <updated>1615659490489</updated>
       <workItem from="1615659491673" duration="3551000" />
       <workItem from="1615669572417" duration="968000" />
-      <workItem from="1615731843369" duration="2864000" />
+      <workItem from="1615731843369" duration="4582000" />
     </task>
     <servers />
   </component>
