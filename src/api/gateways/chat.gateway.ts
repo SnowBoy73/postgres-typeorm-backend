@@ -72,7 +72,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
     try
     {
       this.chatService.addClient(client.id, nickname)
-        .then((chatClient) =>
+        .subscribe((chatClient) =>
         {
           const welcome: WelcomeDto =
           {

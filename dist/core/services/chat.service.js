@@ -18,6 +18,7 @@ const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
 const client_entity_1 = require("../../infrastructure/data-source/entities/client.entity");
 const rxjs_1 = require("rxjs");
+const operators_1 = require("rxjs/operators");
 let ChatService = class ChatService {
     constructor(clientRepository) {
         this.clientRepository = clientRepository;
@@ -34,20 +35,20 @@ let ChatService = class ChatService {
         this.allMessages.push(chatMessage);
         return chatMessage;
     }
-    async addClient(id, nickname) {
+    addClient(id, nickname) {
         let chatClient = this.clients.find((c) => c.nickname === nickname && c.id === id);
         if (chatClient) {
-            return chatClient;
+            return rxjs_1.of(chatClient);
         }
         if (this.clients.find((c) => c.nickname === nickname)) {
             throw new Error('Nickname already in use');
         }
-        chatClient = { id: id, nickname: nickname, };
         const client = this.clientRepository.create();
         client.nickname = nickname;
-        await this.clientRepository.save(client);
-        chatClient = { id: '' + client.id, nickname: nickname };
-        return rxjs_1.of(chatClient).toPromise();
+        return rxjs_1.of(this.clientRepository.save(client))
+            .pipe(operators_1.map((dbClient) => {
+            return { id: '' + client.id, nickname: nickname };
+        }));
     }
     getClients() {
         return this.clients;

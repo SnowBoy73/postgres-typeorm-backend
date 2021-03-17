@@ -50,7 +50,7 @@ let ChatGateway = class ChatGateway {
     handleNicknameEvent(nickname, client) {
         try {
             this.chatService.addClient(client.id, nickname)
-                .then((chatClient) => {
+                .subscribe((chatClient) => {
                 const welcome = {
                     clients: this.chatService.getClients(),
                     messages: this.chatService.getMessages(),

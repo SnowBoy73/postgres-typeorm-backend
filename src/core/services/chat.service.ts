@@ -5,7 +5,8 @@ import { InjectRepository} from '@nestjs/typeorm';
 import {Repository} from 'typeorm';
 import {IChatService} from '../primary-ports/chat.service.interface';
 import Client from '../../infrastructure/data-source/entities/client.entity';
-import {of} from 'rxjs';
+import {Observable, of} from 'rxjs';
+import {map} from 'rxjs/operators';
 
 @Injectable()
 export class ChatService implements IChatService {
@@ -31,22 +32,27 @@ export class ChatService implements IChatService {
     return chatMessage;
   }
 
-  async addClient(id: string, nickname: string): Promise<ChatClient> {
+   addClient(id: string, nickname: string): Observable<ChatClient> {
     let chatClient = this.clients.find(
       (c) => c.nickname === nickname && c.id === id,
     );
     if (chatClient) {
-      return chatClient;
+      return of(chatClient);
     }
     if (this.clients.find((c) => c.nickname === nickname)) {
       throw new Error('Nickname already in use');
     }
-    chatClient = {id: id, nickname: nickname,};
+    //chatClient = {id: id, nickname: nickname,};
     const client = this.clientRepository.create();
     client.nickname = nickname;
-    await this.clientRepository.save(client);
-    chatClient = { id: '' + client.id, nickname: nickname}
-    return of(chatClient).toPromise();
+    return of(this.clientRepository.save(client))
+        .pipe(
+            map((dbClient) => {
+              return { id: '' + client.id, nickname: nickname };
+            })
+        );
+   // chatClient = { id: '' + client.id, nickname: nickname}
+    //return of(chatClient).toPromise();
   }
 
   getClients(): ChatClient[] {
