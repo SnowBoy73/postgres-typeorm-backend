@@ -17,11 +17,3 @@ import Client from '../infrastructure/data-source/entities/client.entity';
   ],
 })
 export class ChatModule {}
-
-//OLD - WORKS
-/*
-@Module({
-  providers: [ChatGateway, ChatService],
-})
-export class ChatModule {}
-*/

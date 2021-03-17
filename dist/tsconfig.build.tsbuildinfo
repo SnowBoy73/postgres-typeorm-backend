@@ -1577,12 +1577,12 @@
         "affectsGlobalScope": false
       },
       "../src/core/primary-ports/chat.service.interface.ts": {
-        "version": "f19e1c2be9e554fb802072b02a5c586143f3d9786cb5d1a60d1fa7f42c96f149",
-        "signature": "ad2ca78d2c7e342155a5ded4a8995c27378bbd7874d603b31bbb9588a9b5d891",
+        "version": "325e5b62bbaae0fc74b0b84022884f7e45ff55af91448de15590170521426623",
+        "signature": "66869ad60abe0dff6d734e5637baaee339f8647c715168a04c4f952e2a477cae",
         "affectsGlobalScope": false
       },
       "../src/api/gateways/chat.gateway.ts": {
-        "version": "c372c91cd15a750da71b07b36795c4489c598456c6de5070d1b1ae3b86063d9f",
+        "version": "4927c0dcadea5027f6839bdb94a1a1548c5163cfde7cc3cffc4ef2d8d55ab9e7",
         "signature": "dc76faa3a20faad5ee1b3b04d5b0aa5d98bc8e9d0aaec97a6709c1e8f6cc1fa4",
         "affectsGlobalScope": false
       },
@@ -3246,18 +3246,18 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "affectsGlobalScope": false
       },
-      "../src/core/services/chat.service.ts": {
-        "version": "16b61eb1b8797b2a869c0f37477d8b0c75796edbdbd703082c7e105e4f81798d",
-        "signature": "28ae1e94e66a95f5fd203713f250ece379627c9bcc8bf495577d6d4fa4b2b8dc",
-        "affectsGlobalScope": false
-      },
       "../src/infrastructure/data-source/entities/client.entity.ts": {
         "version": "0b9314ebe788199fe86e1a86a89bee33294ab2d015fb67455460fe31c20aff6c",
         "signature": "addbea7385ec7a4578b76eda5f39ed49006c71ac96e34655663b46971f4109c2",
         "affectsGlobalScope": false
       },
+      "../src/core/services/chat.service.ts": {
+        "version": "c28c57923eaef8cd23d76a5dc86ef391710f19e40c1ed992aacbfaa7adf1d459",
+        "signature": "1835d2b754cede780e0e8c391e336a3ebe8e8d790e8b1bf09bb728c7c46516fa",
+        "affectsGlobalScope": false
+      },
       "../src/api/chat.module.ts": {
-        "version": "59614dce6e0ec487ef855fe81bde071ef36defcd98ff8cc466d0d8aa9066840d",
+        "version": "f894321e567d2f84a39241c375eeecec82b14eddae8e42bdd7620f7367fc3976",
         "signature": "331ca11e3787e052563694011f0c6a02519dd2acfaff07e2e38c22b2ffd0cae7",
         "affectsGlobalScope": false
       },
@@ -3332,7 +3332,7 @@
         "affectsGlobalScope": false
       },
       "../src/infrastructure/data-source/postgres/database.module.ts": {
-        "version": "9219bcd369a4feedd634675567fb94b2737938725a9ac0de5cc1091d28b8a9af",
+        "version": "4a0775e75c43130beadb2be4cf006eb3283f2f8bf1beed964e154b1ad2999a9e",
         "signature": "a7ad670f373dd5665c73c7dc09a8e28b976a63bd7ed08def7c1c13456e87d3dc",
         "affectsGlobalScope": false
       },
@@ -6555,10 +6555,12 @@
       "../src/core/services/chat.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/rxjs/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
         "../src/core/models/chat-client.model.ts",
         "../src/core/models/chat-message.model.ts",
-        "../src/core/primary-ports/chat.service.interface.ts"
+        "../src/core/primary-ports/chat.service.interface.ts",
+        "../src/infrastructure/data-source/entities/client.entity.ts"
       ],
       "../src/infrastructure/data-source/entities/client.entity.ts": [
         "../node_modules/typeorm/index.d.ts"
@@ -9250,9 +9252,11 @@
         "../src/core/models/chat-message.model.ts"
       ],
       "../src/core/services/chat.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
         "../src/core/models/chat-client.model.ts",
         "../src/core/models/chat-message.model.ts",
-        "../src/core/primary-ports/chat.service.interface.ts"
+        "../src/core/primary-ports/chat.service.interface.ts",
+        "../src/infrastructure/data-source/entities/client.entity.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [

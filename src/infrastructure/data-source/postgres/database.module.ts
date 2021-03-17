@@ -16,6 +16,7 @@ import { Client} from '../entities/client.entity';
         password: configService.get('POSTGRES_PASSWORD'),
         database: configService.get('POSTGRES_DB'),
         entities: [
+            // __dirname + '/../**/*.entity.ts,
           Client
         ],
         synchronize: true,
