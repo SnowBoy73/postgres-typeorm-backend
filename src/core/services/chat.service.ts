@@ -1,19 +1,27 @@
 import { Injectable } from '@nestjs/common';
-import { ChatClientDto } from './chat-client.dto';
-import { ChatMessageDto } from './chat-message.dto';
+import {ChatMessage} from '../models/chat-message.model';
+import {ChatClient} from '../models/chat-client.model';
+import { InjectRepository} from '@nestjs/typeorm';
+import {Repository} from 'typeorm';
+import {IChatService} from '../primary-ports/chat.service.interface';
 
 @Injectable()
-export class ChatService {
-  allMessages: ChatMessageDto[] = [];
-  clients: ChatClientDto[] = [];
+export class ChatService implements IChatService {
+  allMessages: ChatMessage[] = [];
+  clients: ChatClient[] = [];
 
-  addMessage(
-    message: string,
-    clientId: string,
-    sentAt: string,
-  ): ChatMessageDto {
+
+  /*
+  constructor(
+      @InjectRepository(Client)
+      private clientRepository: Repository<Client>
+  ) {}
+  */
+
+  addMessage(message: string, clientId: string, sentAt: string): ChatMessage
+  {
     const client = this.clients.find((c) => c.id === clientId);
-    const chatMessage: ChatMessageDto = {
+    const chatMessage: ChatMessage = {
       message: message,
       sender: client,
       sentAt: sentAt,
@@ -22,7 +30,7 @@ export class ChatService {
     return chatMessage;
   }
 
-  addClient(id: string, nickname: string): ChatClientDto {
+  addClient(id: string, nickname: string): ChatClient {
     let chatClient = this.clients.find(
       (c) => c.nickname === nickname && c.id === id,
     );
@@ -40,19 +48,19 @@ export class ChatService {
     return chatClient;
   }
 
-  getClients(): ChatClientDto[] {
+  getClients(): ChatClient[] {
     return this.clients;
   }
 
-  getMessages(): ChatMessageDto[] {
+  getMessages(): ChatMessage[] {
     return this.allMessages;
   }
 
-  delete(id: string) {
+  deleteClient(id: string) {
     this.clients = this.clients.filter((c) => id !== id);
   }
 
-  updateTyping(typing: boolean, id: string): ChatClientDto {
+  updateTyping(typing: boolean, id: string): ChatClient {
     const chatClient = this.clients.find((c) => c.id === id);
     if (chatClient && chatClient.typing !== typing) {
       chatClient.typing = typing;

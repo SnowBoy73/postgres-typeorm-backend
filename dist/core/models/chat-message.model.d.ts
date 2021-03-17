@@ -1,6 +1,6 @@
-import { ChatClientDto } from '../../chat/shared/chat-client.dto';
+import { ChatClient } from './chat-client.model';
 export interface ChatMessage {
     message: string;
-    sender: ChatClientDto;
+    sender: ChatClient;
     sentAt: string;
 }

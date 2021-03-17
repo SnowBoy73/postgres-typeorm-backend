@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { ChatModule } from './chat/chat.module';
+import { ChatModule } from './api/chat.module';
 import {ConfigModule} from '@nestjs/config';
 import * as Joi from '@hapi/joi';
 import {DatabaseModule} from './infrastructure/data-source/postgres/database.module';

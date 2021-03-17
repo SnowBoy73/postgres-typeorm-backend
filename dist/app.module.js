@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
-const chat_module_1 = require("./chat/chat.module");
+const chat_module_1 = require("./api/chat.module");
 const config_1 = require("@nestjs/config");
 const Joi = require("@hapi/joi");
 const database_module_1 = require("./infrastructure/data-source/postgres/database.module");

@@ -8,15 +8,22 @@ import {
   WebSocketServer,
 } from '@nestjs/websockets';
 import { Socket } from 'socket.io';
-import { ChatService } from './shared/chat.service';
+import { WelcomeDto} from '../dtos/welcome.dto';
+import { Inject } from '@nestjs/common';
 
-import { WelcomeDto} from '../api/dtos/welcome.dto';
-// import { WelcomeDto } from './shared/welcome.dto';
-import { ChatMessageDto } from './shared/chat-message.dto';
+//  WAS import { ChatService } from '../../core/services/chat.service';
+//import { IChatService, IChatServiceProvider } from '../../core/services/chat.service';
+
+import {
+  IChatService,
+  IChatServiceProvider,
+} from '../../core/primary-ports/chat.service.interface';
 
 @WebSocketGateway()
 export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
-  constructor(private chatService: ChatService) {}
+  constructor(
+      @Inject(IChatServiceProvider) private chatService: IChatService,
+  ) {}
 
   @WebSocketServer() server;
 
@@ -83,7 +90,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
   }
 
   handleDisconnect(client: Socket): any {
-    this.chatService.delete(client.id);
+    this.chatService.deleteClient(client.id);
     this.server.emit('clients', this.chatService.getClients());
     console.log('Client Disconnect', this.chatService.getClients());
   }

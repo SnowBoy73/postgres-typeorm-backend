@@ -1561,29 +1561,14 @@
         "signature": "bed35c3ddd0ffc1a8e0fe9dcf83c7b2e0e2900de26405012aaf3724e8fd1a42d",
         "affectsGlobalScope": false
       },
-      "../src/chat/shared/chat-client.dto.ts": {
-        "version": "c8282648545427c089c9c04e8165bb521a14161652d7ae2119da77941b6f17f7",
-        "signature": "c0e10e824f3e63425403807fa856384fb786e2ce0c81917337a9c2820ee9da38",
-        "affectsGlobalScope": false
-      },
-      "../src/chat/shared/chat-message.dto.ts": {
-        "version": "2a43a31b4fd4ddb343d3bdbe56d079bb5d181dee856f9f5ae1d6aca897793b36",
-        "signature": "3987dfcbe8c2f917f80be3e5bc2a7cdf47b4cbfc7a2d83057ddc6282c05d33d4",
-        "affectsGlobalScope": false
-      },
-      "../src/chat/shared/chat.service.ts": {
-        "version": "f5a7b8bcc1eca1d277200abe6cdccb227dca8098adc0119fe4cbc28207e46f36",
-        "signature": "f098d1a831c1c3c841758e4e4edd90d00053a6ba447d1d95932ffdf330e9c60d",
-        "affectsGlobalScope": false
-      },
       "../src/core/models/chat-client.model.ts": {
         "version": "f264da8072bbe86b01f3eb1ec92ce8b55a0b7191cae48b992e77f5f7d33649b9",
         "signature": "a329b390166f8f1a30ca5fc65672bf5141f0141440bd8323acd763e71ff62ee9",
         "affectsGlobalScope": false
       },
       "../src/core/models/chat-message.model.ts": {
-        "version": "ded34cbd533c37beb69e0f4c50e6a7d27ea955bfd62bbe9f7814674d9a5fe491",
-        "signature": "3cdfa8a32eaa13b072fd27225d31e76b9374dcd6fd37457153e40324ee6e1bfd",
+        "version": "4aa5c16c4d60ad7722fde121a5c5ceafa3f4277f121ce814e6152195cff86a79",
+        "signature": "b2e4551e053c664bb84b0552e922ed362873959060be5136a9f6a14439914f9c",
         "affectsGlobalScope": false
       },
       "../src/api/dtos/welcome.dto.ts": {
@@ -1591,84 +1576,14 @@
         "signature": "7fc06891a97032f18e35d0e60eb86a9bb1ff826a5590b0779f36ce0710750c08",
         "affectsGlobalScope": false
       },
-      "../src/chat/chat.gateway.ts": {
-        "version": "068129411c7d19d1d4b6192ffe2dd90ab5b4fa0e8a9ea629c94c7d1f502156d0",
-        "signature": "fc0569181fbcfe01d400045876ccb18bc3410cccf729e2672fcf11f3ae4acbd8",
+      "../src/core/primary-ports/chat.service.interface.ts": {
+        "version": "f19e1c2be9e554fb802072b02a5c586143f3d9786cb5d1a60d1fa7f42c96f149",
+        "signature": "ad2ca78d2c7e342155a5ded4a8995c27378bbd7874d603b31bbb9588a9b5d891",
         "affectsGlobalScope": false
       },
-      "../src/chat/chat.module.ts": {
-        "version": "ed5a9d4c1416bd76a26c76cb9b13232739c991b9022c358cace30ae44d5bd84b",
-        "signature": "331ca11e3787e052563694011f0c6a02519dd2acfaff07e2e38c22b2ffd0cae7",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/config/dist/interfaces/config-factory.interface.d.ts": {
-        "version": "c216ce81e0306d4d666bf06375f5c2693e7c6b2bc920d1939d956ab01656f744",
-        "signature": "c216ce81e0306d4d666bf06375f5c2693e7c6b2bc920d1939d956ab01656f744",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/config/dist/interfaces/config-module-options.interface.d.ts": {
-        "version": "024a824b366266620afacf0471dd2c93cc6451206c28a3e700879639ad1be523",
-        "signature": "024a824b366266620afacf0471dd2c93cc6451206c28a3e700879639ad1be523",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/config/dist/interfaces/index.d.ts": {
-        "version": "ced3404358800496232fbeb884d609b9ba7e2a4d7aca3dfe33beea0e59f1785a",
-        "signature": "ced3404358800496232fbeb884d609b9ba7e2a4d7aca3dfe33beea0e59f1785a",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/config/dist/config.module.d.ts": {
-        "version": "6731c20a2276ec2eadc75b4a5cd108a56850a686a540c229c25a3bcd00c3fc57",
-        "signature": "6731c20a2276ec2eadc75b4a5cd108a56850a686a540c229c25a3bcd00c3fc57",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/config/dist/types/config.type.d.ts": {
-        "version": "839d15098cc51d756b67acda281788779645cbf8e95571897951afb52ea6535a",
-        "signature": "839d15098cc51d756b67acda281788779645cbf8e95571897951afb52ea6535a",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/config/dist/types/no-infer.type.d.ts": {
-        "version": "443e3123c41da4e34ba5bd439b892f01c8af842692bb943a1c5f5dccd4d3c764",
-        "signature": "443e3123c41da4e34ba5bd439b892f01c8af842692bb943a1c5f5dccd4d3c764",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/config/dist/types/index.d.ts": {
-        "version": "d83ad6de2cfa93597d4dcf9877b77864d8dfefe141b0a733b1549051b8ca4455",
-        "signature": "d83ad6de2cfa93597d4dcf9877b77864d8dfefe141b0a733b1549051b8ca4455",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/config/dist/config.service.d.ts": {
-        "version": "89b1e909bcd18add74b777cc0ccc5b92e66224beb09d5b33c27fab39a78141ab",
-        "signature": "89b1e909bcd18add74b777cc0ccc5b92e66224beb09d5b33c27fab39a78141ab",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/config/dist/utils/register-as.util.d.ts": {
-        "version": "1d2254ab5fdfd1f346a6e8d03ec698954dd330fdafc2942b77366a052571eab7",
-        "signature": "1d2254ab5fdfd1f346a6e8d03ec698954dd330fdafc2942b77366a052571eab7",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/config/dist/utils/get-config-token.util.d.ts": {
-        "version": "aadc9a99a877b842474c622500d983eb1927f6ca27374f1b94e561bef54e5997",
-        "signature": "aadc9a99a877b842474c622500d983eb1927f6ca27374f1b94e561bef54e5997",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/config/dist/utils/index.d.ts": {
-        "version": "f9e034b1ae29825c00532e08ea852b0c72885c343ee48d2975db0a6481218ab3",
-        "signature": "f9e034b1ae29825c00532e08ea852b0c72885c343ee48d2975db0a6481218ab3",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/config/dist/index.d.ts": {
-        "version": "2d83f7d8b38d5941370e769e98492fa28c1112cbc976958522bc92a11b8234aa",
-        "signature": "2d83f7d8b38d5941370e769e98492fa28c1112cbc976958522bc92a11b8234aa",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/config/index.d.ts": {
-        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
-        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/hapi__joi/index.d.ts": {
-        "version": "91a2fdd0c0d1fb495958b2d476785b000d8d337caba9078c14f48c65e324b17a",
-        "signature": "91a2fdd0c0d1fb495958b2d476785b000d8d337caba9078c14f48c65e324b17a",
+      "../src/api/gateways/chat.gateway.ts": {
+        "version": "c372c91cd15a750da71b07b36795c4489c598456c6de5070d1b1ae3b86063d9f",
+        "signature": "dc76faa3a20faad5ee1b3b04d5b0aa5d98bc8e9d0aaec97a6709c1e8f6cc1fa4",
         "affectsGlobalScope": false
       },
       "../node_modules/typeorm/schema-builder/options/tablecolumnoptions.d.ts": {
@@ -3331,9 +3246,89 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "affectsGlobalScope": false
       },
+      "../src/core/services/chat.service.ts": {
+        "version": "16b61eb1b8797b2a869c0f37477d8b0c75796edbdbd703082c7e105e4f81798d",
+        "signature": "28ae1e94e66a95f5fd203713f250ece379627c9bcc8bf495577d6d4fa4b2b8dc",
+        "affectsGlobalScope": false
+      },
       "../src/infrastructure/data-source/entities/client.entity.ts": {
         "version": "0b9314ebe788199fe86e1a86a89bee33294ab2d015fb67455460fe31c20aff6c",
         "signature": "addbea7385ec7a4578b76eda5f39ed49006c71ac96e34655663b46971f4109c2",
+        "affectsGlobalScope": false
+      },
+      "../src/api/chat.module.ts": {
+        "version": "59614dce6e0ec487ef855fe81bde071ef36defcd98ff8cc466d0d8aa9066840d",
+        "signature": "331ca11e3787e052563694011f0c6a02519dd2acfaff07e2e38c22b2ffd0cae7",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/config/dist/interfaces/config-factory.interface.d.ts": {
+        "version": "c216ce81e0306d4d666bf06375f5c2693e7c6b2bc920d1939d956ab01656f744",
+        "signature": "c216ce81e0306d4d666bf06375f5c2693e7c6b2bc920d1939d956ab01656f744",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/config/dist/interfaces/config-module-options.interface.d.ts": {
+        "version": "024a824b366266620afacf0471dd2c93cc6451206c28a3e700879639ad1be523",
+        "signature": "024a824b366266620afacf0471dd2c93cc6451206c28a3e700879639ad1be523",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/config/dist/interfaces/index.d.ts": {
+        "version": "ced3404358800496232fbeb884d609b9ba7e2a4d7aca3dfe33beea0e59f1785a",
+        "signature": "ced3404358800496232fbeb884d609b9ba7e2a4d7aca3dfe33beea0e59f1785a",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/config/dist/config.module.d.ts": {
+        "version": "6731c20a2276ec2eadc75b4a5cd108a56850a686a540c229c25a3bcd00c3fc57",
+        "signature": "6731c20a2276ec2eadc75b4a5cd108a56850a686a540c229c25a3bcd00c3fc57",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/config/dist/types/config.type.d.ts": {
+        "version": "839d15098cc51d756b67acda281788779645cbf8e95571897951afb52ea6535a",
+        "signature": "839d15098cc51d756b67acda281788779645cbf8e95571897951afb52ea6535a",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/config/dist/types/no-infer.type.d.ts": {
+        "version": "443e3123c41da4e34ba5bd439b892f01c8af842692bb943a1c5f5dccd4d3c764",
+        "signature": "443e3123c41da4e34ba5bd439b892f01c8af842692bb943a1c5f5dccd4d3c764",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/config/dist/types/index.d.ts": {
+        "version": "d83ad6de2cfa93597d4dcf9877b77864d8dfefe141b0a733b1549051b8ca4455",
+        "signature": "d83ad6de2cfa93597d4dcf9877b77864d8dfefe141b0a733b1549051b8ca4455",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/config/dist/config.service.d.ts": {
+        "version": "89b1e909bcd18add74b777cc0ccc5b92e66224beb09d5b33c27fab39a78141ab",
+        "signature": "89b1e909bcd18add74b777cc0ccc5b92e66224beb09d5b33c27fab39a78141ab",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/config/dist/utils/register-as.util.d.ts": {
+        "version": "1d2254ab5fdfd1f346a6e8d03ec698954dd330fdafc2942b77366a052571eab7",
+        "signature": "1d2254ab5fdfd1f346a6e8d03ec698954dd330fdafc2942b77366a052571eab7",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/config/dist/utils/get-config-token.util.d.ts": {
+        "version": "aadc9a99a877b842474c622500d983eb1927f6ca27374f1b94e561bef54e5997",
+        "signature": "aadc9a99a877b842474c622500d983eb1927f6ca27374f1b94e561bef54e5997",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/config/dist/utils/index.d.ts": {
+        "version": "f9e034b1ae29825c00532e08ea852b0c72885c343ee48d2975db0a6481218ab3",
+        "signature": "f9e034b1ae29825c00532e08ea852b0c72885c343ee48d2975db0a6481218ab3",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/config/dist/index.d.ts": {
+        "version": "2d83f7d8b38d5941370e769e98492fa28c1112cbc976958522bc92a11b8234aa",
+        "signature": "2d83f7d8b38d5941370e769e98492fa28c1112cbc976958522bc92a11b8234aa",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/config/index.d.ts": {
+        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/hapi__joi/index.d.ts": {
+        "version": "91a2fdd0c0d1fb495958b2d476785b000d8d337caba9078c14f48c65e324b17a",
+        "signature": "91a2fdd0c0d1fb495958b2d476785b000d8d337caba9078c14f48c65e324b17a",
         "affectsGlobalScope": false
       },
       "../src/infrastructure/data-source/postgres/database.module.ts": {
@@ -3342,7 +3337,7 @@
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "3b33df93e75b43e0baae1c7d4fb1b903488aa24a225266a195d0783834e7a319",
+        "version": "0c94cae3b90831913bd1a23150ec1ef1945a159339476609ec4628137c97b8fc",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -3526,9 +3521,14 @@
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
-      "../src/chat/shared/welcome.dto.ts": {
-        "version": "adddf3595ea4539230a7e0fa08e8603d28ed069672d1321921bd867123b4e12c",
-        "signature": "d7e6ccb323e5f48b9215fc3bac5b743346de249e69ddd6ea3e258d821c499f37",
+      "../src/api/dtos/chat-client.dto.ts": {
+        "version": "c8282648545427c089c9c04e8165bb521a14161652d7ae2119da77941b6f17f7",
+        "signature": "c0e10e824f3e63425403807fa856384fb786e2ce0c81917337a9c2820ee9da38",
+        "affectsGlobalScope": false
+      },
+      "../src/api/dtos/chat-message.dto.ts": {
+        "version": "2a43a31b4fd4ddb343d3bdbe56d079bb5d181dee856f9f5ae1d6aca897793b36",
+        "signature": "3987dfcbe8c2f917f80be3e5bc2a7cdf47b4cbfc7a2d83057ddc6282c05d33d4",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -6509,9 +6509,27 @@
         "../node_modules/typeorm/metadata/relationmetadata.d.ts",
         "../node_modules/typeorm/query-runner/queryrunner.d.ts"
       ],
+      "../src/api/chat.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/api/gateways/chat.gateway.ts",
+        "../src/core/primary-ports/chat.service.interface.ts",
+        "../src/core/services/chat.service.ts",
+        "../src/infrastructure/data-source/entities/client.entity.ts"
+      ],
+      "../src/api/dtos/chat-message.dto.ts": [
+        "../src/api/dtos/chat-client.dto.ts"
+      ],
       "../src/api/dtos/welcome.dto.ts": [
         "../src/core/models/chat-client.model.ts",
         "../src/core/models/chat-message.model.ts"
+      ],
+      "../src/api/gateways/chat.gateway.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/websockets/index.d.ts",
+        "../node_modules/@types/socket.io/index.d.ts",
+        "../src/api/dtos/welcome.dto.ts",
+        "../src/core/primary-ports/chat.service.interface.ts"
       ],
       "../src/app.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -6521,38 +6539,26 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/config/index.d.ts",
         "../node_modules/@types/hapi__joi/index.d.ts",
-        "../src/chat/chat.module.ts",
+        "../src/api/chat.module.ts",
         "../src/infrastructure/data-source/postgres/database.module.ts"
       ],
       "../src/app.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
       ],
-      "../src/chat/chat.gateway.ts": [
-        "../node_modules/@nestjs/websockets/index.d.ts",
-        "../node_modules/@types/socket.io/index.d.ts",
-        "../src/api/dtos/welcome.dto.ts",
-        "../src/chat/shared/chat-message.dto.ts",
-        "../src/chat/shared/chat.service.ts"
-      ],
-      "../src/chat/chat.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/chat/chat.gateway.ts",
-        "../src/chat/shared/chat.service.ts"
-      ],
-      "../src/chat/shared/chat-message.dto.ts": [
-        "../src/chat/shared/chat-client.dto.ts"
-      ],
-      "../src/chat/shared/chat.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/chat/shared/chat-client.dto.ts",
-        "../src/chat/shared/chat-message.dto.ts"
-      ],
-      "../src/chat/shared/welcome.dto.ts": [
-        "../src/chat/shared/chat-client.dto.ts",
-        "../src/chat/shared/chat-message.dto.ts"
-      ],
       "../src/core/models/chat-message.model.ts": [
-        "../src/chat/shared/chat-client.dto.ts"
+        "../src/core/models/chat-client.model.ts"
+      ],
+      "../src/core/primary-ports/chat.service.interface.ts": [
+        "../src/core/models/chat-client.model.ts",
+        "../src/core/models/chat-message.model.ts"
+      ],
+      "../src/core/services/chat.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/core/models/chat-client.model.ts",
+        "../src/core/models/chat-message.model.ts",
+        "../src/core/primary-ports/chat.service.interface.ts"
       ],
       "../src/infrastructure/data-source/entities/client.entity.ts": [
         "../node_modules/typeorm/index.d.ts"
@@ -9221,31 +9227,32 @@
         "../node_modules/typeorm/metadata/relationmetadata.d.ts",
         "../node_modules/typeorm/query-runner/queryrunner.d.ts"
       ],
+      "../src/api/dtos/chat-message.dto.ts": [
+        "../src/api/dtos/chat-client.dto.ts"
+      ],
       "../src/api/dtos/welcome.dto.ts": [
         "../src/core/models/chat-client.model.ts",
         "../src/core/models/chat-message.model.ts"
       ],
+      "../src/api/gateways/chat.gateway.ts": [
+        "../node_modules/@nestjs/websockets/index.d.ts",
+        "../node_modules/@types/socket.io/index.d.ts",
+        "../src/core/primary-ports/chat.service.interface.ts"
+      ],
       "../src/app.controller.ts": [
         "../src/app.service.ts"
       ],
-      "../src/chat/chat.gateway.ts": [
-        "../node_modules/@nestjs/websockets/index.d.ts",
-        "../node_modules/@types/socket.io/index.d.ts",
-        "../src/chat/shared/chat.service.ts"
-      ],
-      "../src/chat/shared/chat-message.dto.ts": [
-        "../src/chat/shared/chat-client.dto.ts"
-      ],
-      "../src/chat/shared/chat.service.ts": [
-        "../src/chat/shared/chat-client.dto.ts",
-        "../src/chat/shared/chat-message.dto.ts"
-      ],
-      "../src/chat/shared/welcome.dto.ts": [
-        "../src/chat/shared/chat-client.dto.ts",
-        "../src/chat/shared/chat-message.dto.ts"
-      ],
       "../src/core/models/chat-message.model.ts": [
-        "../src/chat/shared/chat-client.dto.ts"
+        "../src/core/models/chat-client.model.ts"
+      ],
+      "../src/core/primary-ports/chat.service.interface.ts": [
+        "../src/core/models/chat-client.model.ts",
+        "../src/core/models/chat-message.model.ts"
+      ],
+      "../src/core/services/chat.service.ts": [
+        "../src/core/models/chat-client.model.ts",
+        "../src/core/models/chat-message.model.ts",
+        "../src/core/primary-ports/chat.service.interface.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
