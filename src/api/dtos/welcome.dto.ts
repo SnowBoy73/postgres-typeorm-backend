@@ -3,7 +3,6 @@ import { ChatMessage} from '../../core/models/chat-message.model';
 
 export interface WelcomeDto {
   clients: ChatClient[];
-  //clients: Promise<ChatClient[]>;
   client: ChatClient;
   messages: ChatMessage[];
 }

@@ -20,7 +20,7 @@ let ChatGateway = class ChatGateway {
     constructor(chatService) {
         this.chatService = chatService;
     }
-    handleChatEvent(message, client) {
+    async handleChatEvent(message, client) {
         const ts = Date.now();
         const date_ob = new Date(ts);
         const date = date_ob.getDate();
@@ -38,7 +38,7 @@ let ChatGateway = class ChatGateway {
             secZero = '0';
         }
         const sentAt = year + '-' + month + '-' + date + '@' + hour + ':' + minZero + minute + ':' + secZero + second;
-        const chatMessage = this.chatService.addMessage(message, client.id, sentAt);
+        const chatMessage = await this.chatService.addMessage(message, client.id, sentAt);
         this.server.emit('newMessage', chatMessage);
     }
     handleTypingEvent(typing, client) {
@@ -50,11 +50,12 @@ let ChatGateway = class ChatGateway {
     async handleNicknameEvent(nickname, client) {
         try {
             const chatClient = await this.chatService.addClient(client.id, nickname);
+            const chatMessages = await this.chatService.getMessages();
             console.log('chatClient', chatClient);
             const chatClients = await this.chatService.getClients();
             const welcome = {
                 clients: chatClients,
-                messages: this.chatService.getMessages(),
+                messages: chatMessages,
                 client: chatClient,
             };
             client.emit('welcome', welcome);
@@ -85,7 +86,7 @@ __decorate([
     __param(1, websockets_1.ConnectedSocket()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String, Object]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], ChatGateway.prototype, "handleChatEvent", null);
 __decorate([
     websockets_1.SubscribeMessage('typing'),

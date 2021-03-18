@@ -59,8 +59,10 @@ let ChatService = class ChatService {
         const chatClients = JSON.parse(JSON.stringify(clients));
         return chatClients;
     }
-    getMessages() {
-        return this.allMessages;
+    async getMessages() {
+        const messages = await this.messageRepository.find();
+        const chatMessages = JSON.parse(JSON.stringify(messages));
+        return chatMessages;
     }
     async deleteClient(id) {
         await this.clientRepository.delete({ id: id });

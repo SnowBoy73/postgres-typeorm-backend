@@ -9,13 +9,11 @@ import Message from '../../infrastructure/data-source/entities/message.entity';
 import {async, Observable, of} from 'rxjs';
 import {map} from 'rxjs/operators';
 import {fromPromise} from 'rxjs/internal-compatibility';
-import {json} from 'express';
 
 @Injectable()
 export class ChatService implements IChatService {
   allMessages: ChatMessage[] = [];
   clients: ChatClient[] = [];
-
 
 
   constructor(
@@ -25,20 +23,9 @@ export class ChatService implements IChatService {
       private messageRepository: Repository<Message>
   ) {}
 
-
-  addMessage(message: string, clientId: string, sentAt: string): Observable<ChatMessage>
+  // USING OBSERVABLE
+  /* addMessage(message: string, clientId: string, sentAt: string): Observable<ChatMessage>
   {
-  /*  const client = this.clients.find((c) => c.id === clientId);
-    const chatMessage: ChatMessage = {
-      message: message,
-      sender: client,
-      sentAt: sentAt,
-    };
-    this.allMessages.push(chatMessage);
-    return chatMessage;
-    */
-
-      //NEW
       const client = this.clients.find((c) => c.id === clientId);
       const msg = this.messageRepository.create();
       msg.message = message,
@@ -51,6 +38,23 @@ export class ChatService implements IChatService {
               })
           );
   }
+  */
+
+    // USING PROMISE
+    addMessage(message: string, clientId: string, sentAt: string): Observable<ChatMessage>
+    {
+        const client = this.clients.find((c) => c.id === clientId);
+        const msg = this.messageRepository.create();
+        msg.message = message,
+            msg.senderId = clientId,
+            msg.sentAt = sentAt;
+        return fromPromise(this.messageRepository.save(msg))
+            .pipe(
+                map((dbMessage) => {
+                    return { message: '' + message, sender: client, sentAt: sentAt };
+                })
+            );
+    }
 
     // USING PROMISE
     async addClient(id: string, nickname: string): Promise<ChatClient> {
@@ -68,18 +72,6 @@ export class ChatService implements IChatService {
          throw new Error('Nickname already in use');
        }
     }
-
-    /* let chatClient = this.clients.find
-    if (this.clients.find((c) => c.nickname === nickname)) {
-      throw new Error('Nickname already in use');
-    }
-    //chatClient = {id: id, nickname: nickname,};
-    let client = this.clientRepository.create();
-    client.id = id;
-    client.nickname = nickname;
-    client = await this.clientRepository.save(client);
-    return { id: '' + client.id, nickname: client.nickname}
-  }  */
 
   // USING OBSERVABLE
   /*   addClient(id: string, nickname: string): Observable<ChatClient> {
@@ -101,28 +93,28 @@ export class ChatService implements IChatService {
             })
         );
   }
-   */
+  */
 
-/*
-    getClients(): ChatClient[] {
-        return this.clients;
+
+  async getClients(): Promise<ChatClient[]> {
+      const clients = await this.clientRepository.find();
+      const chatClients: ChatClient[] = JSON.parse(JSON.stringify(clients));
+      return chatClients;
   }
-*/
-  // AS PROMISE
-      async getClients(): Promise<ChatClient[]> {
-          const clients = await this.clientRepository.find();
-          const chatClients: ChatClient[] = JSON.parse(JSON.stringify(clients));
-          return chatClients;
-    }
+
+  async getMessages(): Promise<ChatMessage[]> {
+      const messages = await this.messageRepository.find();
+      const chatMessages: ChatMessage[] = JSON.parse(JSON.stringify(messages));
+      return chatMessages;
+  }
 
 
-  getMessages(): ChatMessage[] {
+  /*getMessages(): ChatMessage[] {
     return this.allMessages;
-  }
+  } */
 
   async deleteClient(id: string): Promise<void> {
       await this.clientRepository.delete({id: id});
-      //this.clients = this.clients.filter((c) => c.id !== id);
   }
 
   updateTyping(typing: boolean, id: string): ChatClient {

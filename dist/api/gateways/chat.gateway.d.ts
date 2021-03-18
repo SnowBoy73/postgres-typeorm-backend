@@ -5,7 +5,7 @@ export declare class ChatGateway implements OnGatewayConnection, OnGatewayDiscon
     private chatService;
     constructor(chatService: IChatService);
     server: any;
-    handleChatEvent(message: string, client: Socket): void;
+    handleChatEvent(message: string, client: Socket): Promise<void>;
     handleTypingEvent(typing: boolean, client: Socket): void;
     handleNicknameEvent(nickname: string, client: Socket): Promise<void>;
     handleConnection(client: Socket, ...args: any[]): Promise<any>;

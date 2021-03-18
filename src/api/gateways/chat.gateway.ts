@@ -25,10 +25,10 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
   @WebSocketServer() server;
 
   @SubscribeMessage('message')
-  handleChatEvent(
+  async handleChatEvent(
     @MessageBody() message: string,
     @ConnectedSocket() client: Socket,
-  ): void {
+  ): Promise<void> {
     const ts = Date.now();
     const date_ob = new Date(ts);
     const date = date_ob.getDate();
@@ -46,7 +46,9 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
       secZero = '0';
     }
     const sentAt = year + '-' + month + '-' + date + '@' + hour + ':' + minZero + minute + ':' + secZero + second;
-    const chatMessage = this.chatService.addMessage(message, client.id, sentAt);
+    //const chatMessage = this.chatService.addMessage(message, client.id, sentAt);
+    const chatMessage = await this.chatService.addMessage(message, client.id ,sentAt ) //
+
     this.server.emit('newMessage', chatMessage);
   }
 
@@ -70,12 +72,15 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
     try
     {
       const chatClient = await this.chatService.addClient(client.id, nickname)
+      const chatMessages = await this.chatService.getMessages() //
+
       console.log('chatClient', chatClient)
       const chatClients = await this.chatService.getClients();
       const welcome: WelcomeDto =
         {
           clients: chatClients,
-          messages: this.chatService.getMessages(),
+          messages: chatMessages, //
+          //messages: this.chatService.getMessages(),
           client: chatClient,
         };
       client.emit('welcome', welcome);

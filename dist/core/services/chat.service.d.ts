@@ -14,7 +14,7 @@ export declare class ChatService implements IChatService {
     addMessage(message: string, clientId: string, sentAt: string): Observable<ChatMessage>;
     addClient(id: string, nickname: string): Promise<ChatClient>;
     getClients(): Promise<ChatClient[]>;
-    getMessages(): ChatMessage[];
+    getMessages(): Promise<ChatMessage[]>;
     deleteClient(id: string): Promise<void>;
     updateTyping(typing: boolean, id: string): ChatClient;
 }
