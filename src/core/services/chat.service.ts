@@ -9,6 +9,7 @@ import Message from '../../infrastructure/data-source/entities/message.entity';
 import {async, Observable, of} from 'rxjs';
 import {map} from 'rxjs/operators';
 import {fromPromise} from 'rxjs/internal-compatibility';
+import {json} from 'express';
 
 @Injectable()
 export class ChatService implements IChatService {
@@ -66,8 +67,8 @@ export class ChatService implements IChatService {
        } else {
          throw new Error('Nickname already in use');
        }
-
     }
+
     /* let chatClient = this.clients.find
     if (this.clients.find((c) => c.nickname === nickname)) {
       throw new Error('Nickname already in use');
@@ -102,15 +103,16 @@ export class ChatService implements IChatService {
   }
    */
 
-    /*
+/*
     getClients(): ChatClient[] {
-      return this.clientRepository.find();
+        return this.clients;
   }
 */
   // AS PROMISE
       async getClients(): Promise<ChatClient[]> {
-        //return this.clients;
-        return await this.clientRepository.find();
+          const clients = await this.clientRepository.find();
+          const chatClients: ChatClient[] = JSON.parse(JSON.stringify(clients));
+          return chatClients;
     }
 
 
@@ -118,11 +120,9 @@ export class ChatService implements IChatService {
     return this.allMessages;
   }
 
-  async deleteClient(id: string){//: Promise<void> {
-      //let intId = id.valueOf();
-     // await this.clientRepository.delete({id: id});
-
-        this.clients = this.clients.filter((c) => id !== id);
+  async deleteClient(id: string): Promise<void> {
+      await this.clientRepository.delete({id: id});
+      //this.clients = this.clients.filter((c) => c.id !== id);
   }
 
   updateTyping(typing: boolean, id: string): ChatClient {

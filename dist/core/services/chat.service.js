@@ -55,13 +55,15 @@ let ChatService = class ChatService {
         }
     }
     async getClients() {
-        return await this.clientRepository.find();
+        const clients = await this.clientRepository.find();
+        const chatClients = JSON.parse(JSON.stringify(clients));
+        return chatClients;
     }
     getMessages() {
         return this.allMessages;
     }
     async deleteClient(id) {
-        this.clients = this.clients.filter((c) => id !== id);
+        await this.clientRepository.delete({ id: id });
     }
     updateTyping(typing, id) {
         const chatClient = this.clients.find((c) => c.id === id);

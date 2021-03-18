@@ -8,6 +8,6 @@ export declare class ChatGateway implements OnGatewayConnection, OnGatewayDiscon
     handleChatEvent(message: string, client: Socket): void;
     handleTypingEvent(typing: boolean, client: Socket): void;
     handleNicknameEvent(nickname: string, client: Socket): Promise<void>;
-    handleConnection(client: Socket, ...args: any[]): any;
-    handleDisconnect(client: Socket): any;
+    handleConnection(client: Socket, ...args: any[]): Promise<any>;
+    handleDisconnect(client: Socket): Promise<any>;
 }

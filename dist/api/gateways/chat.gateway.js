@@ -51,27 +51,28 @@ let ChatGateway = class ChatGateway {
         try {
             const chatClient = await this.chatService.addClient(client.id, nickname);
             console.log('chatClient', chatClient);
+            const chatClients = await this.chatService.getClients();
             const welcome = {
-                clients: this.chatService.getClients(),
+                clients: chatClients,
                 messages: this.chatService.getMessages(),
                 client: chatClient,
             };
             client.emit('welcome', welcome);
-            this.server.emit('clients', this.chatService.getClients());
+            this.server.emit('clients', chatClients);
         }
         catch (e) {
             client.error(e.message);
         }
     }
-    handleConnection(client, ...args) {
+    async handleConnection(client, ...args) {
         console.log('Client Connect', client.id);
         client.emit('allMessages', this.chatService.getMessages());
-        this.server.emit('clients', this.chatService.getClients());
+        this.server.emit('clients', await this.chatService.getClients());
     }
-    handleDisconnect(client) {
-        this.chatService.deleteClient(client.id);
+    async handleDisconnect(client) {
+        await this.chatService.deleteClient(client.id);
         this.server.emit('clients', this.chatService.getClients());
-        console.log('Client Disconnect', this.chatService.getClients());
+        console.log('Client Disconnect', await this.chatService.getClients());
     }
 };
 __decorate([
