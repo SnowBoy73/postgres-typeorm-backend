@@ -53,12 +53,22 @@ export class ChatService implements IChatService {
 
     // USING PROMISE
     async addClient(id: string, nickname: string): Promise<ChatClient> {
-    let chatClient = this.clients.find(
-      (c) => c.nickname === nickname && c.id === id,
-    );
-    if (chatClient) {
-      return chatClient;
+       const clientDb = await this.clientRepository.findOne({nickname: nickname})
+       if(!clientDb) {
+           let client = this.clientRepository.create();
+           client.id = id;
+           client.nickname = nickname;
+           client = await this.clientRepository.save(client);
+           return {id: '' + client.id, nickname: client.nickname};
+       }
+       if (clientDb.id === id) {
+         return {id: clientDb.id, nickname: clientDb.nickname};
+       } else {
+         throw new Error('Nickname already in use');
+       }
+
     }
+    /* let chatClient = this.clients.find
     if (this.clients.find((c) => c.nickname === nickname)) {
       throw new Error('Nickname already in use');
     }
@@ -68,7 +78,7 @@ export class ChatService implements IChatService {
     client.nickname = nickname;
     client = await this.clientRepository.save(client);
     return { id: '' + client.id, nickname: client.nickname}
-  }
+  }  */
 
   // USING OBSERVABLE
   /*   addClient(id: string, nickname: string): Observable<ChatClient> {

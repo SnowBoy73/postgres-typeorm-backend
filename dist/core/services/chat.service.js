@@ -39,18 +39,20 @@ let ChatService = class ChatService {
         }));
     }
     async addClient(id, nickname) {
-        let chatClient = this.clients.find((c) => c.nickname === nickname && c.id === id);
-        if (chatClient) {
-            return chatClient;
+        const clientDb = await this.clientRepository.findOne({ nickname: nickname });
+        if (!clientDb) {
+            let client = this.clientRepository.create();
+            client.id = id;
+            client.nickname = nickname;
+            client = await this.clientRepository.save(client);
+            return { id: '' + client.id, nickname: client.nickname };
         }
-        if (this.clients.find((c) => c.nickname === nickname)) {
+        if (clientDb.id === id) {
+            return { id: clientDb.id, nickname: clientDb.nickname };
+        }
+        else {
             throw new Error('Nickname already in use');
         }
-        let client = this.clientRepository.create();
-        client.id = id;
-        client.nickname = nickname;
-        client = await this.clientRepository.save(client);
-        return { id: '' + client.id, nickname: client.nickname };
     }
     async getClients() {
         return await this.clientRepository.find();
