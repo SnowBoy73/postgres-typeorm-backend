@@ -13,7 +13,7 @@ export declare class ChatService implements IChatService {
     constructor(clientRepository: Repository<Client>, messageRepository: Repository<Message>);
     addMessage(message: string, clientId: string, sentAt: string): Observable<ChatMessage>;
     addClient(id: string, nickname: string): Promise<ChatClient>;
-    getClients(): ChatClient[];
+    getClients(): Promise<ChatClient[]>;
     getMessages(): ChatMessage[];
     deleteClient(id: string): Promise<void>;
     updateTyping(typing: boolean, id: string): ChatClient;

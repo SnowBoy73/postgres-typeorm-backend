@@ -52,8 +52,8 @@ let ChatService = class ChatService {
         client = await this.clientRepository.save(client);
         return { id: '' + client.id, nickname: client.nickname };
     }
-    getClients() {
-        return this.clients;
+    async getClients() {
+        return await this.clientRepository.find();
     }
     getMessages() {
         return this.allMessages;

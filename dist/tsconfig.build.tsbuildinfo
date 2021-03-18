@@ -1572,13 +1572,13 @@
         "affectsGlobalScope": false
       },
       "../src/api/dtos/welcome.dto.ts": {
-        "version": "c3d6313f6be4068ac920e08f0f0c37a61d7e10b6fa7babf6e63c448a84d8b0a3",
-        "signature": "7fc06891a97032f18e35d0e60eb86a9bb1ff826a5590b0779f36ce0710750c08",
+        "version": "f4a8ec7de83c2fb4f3e682bc3213e53085d5f2534a184b78417a67fb89670926",
+        "signature": "664b62dafb89a9b757b4097b54d5bb2b7cc5319a73efb9eefca0f036ca6902cf",
         "affectsGlobalScope": false
       },
       "../src/core/primary-ports/chat.service.interface.ts": {
-        "version": "182b63838405e4acbd70d14cc0a437a325f079d2e4813800d91804d488090b07",
-        "signature": "92eda9fbe5e7844a1e33af94dd6660d6234e4b2bfa4f4547b9d3b97333667f1a",
+        "version": "f686507e8c3909a0ec6a0227dc5ffe388c5fd0278ad61a23a32455a682170ffc",
+        "signature": "31d4c56dd61a7c353bd5960287f07063facb2cb1cb3f30dd72da229878714799",
         "affectsGlobalScope": false
       },
       "../src/api/gateways/chat.gateway.ts": {
@@ -3952,8 +3952,8 @@
         "affectsGlobalScope": false
       },
       "../src/core/services/chat.service.ts": {
-        "version": "e48ea120a141cb850d89c182a4f731ed26bb5e82aa3f9ff2400ba5bf19ffe055",
-        "signature": "1f885ea835ec40af303ce79d160c3019784e9277904d1c9fe0d153e5efb02843",
+        "version": "b397756b6fce0fdc7211241eb08641077d324c8a56de41f475623ab094299a19",
+        "signature": "58772aaaa5cf740a00af5f29ecf33b19e1dbf69dc24ed03f38b267997684a300",
         "affectsGlobalScope": false
       },
       "../src/api/chat.module.ts": {

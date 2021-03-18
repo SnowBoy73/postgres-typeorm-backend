@@ -92,9 +92,17 @@ export class ChatService implements IChatService {
   }
    */
 
-  getClients(): ChatClient[] {
-     return this.clients;
+    /*
+    getClients(): ChatClient[] {
+      return this.clientRepository.find();
   }
+*/
+  // AS PROMISE
+      async getClients(): Promise<ChatClient[]> {
+        //return this.clients;
+        return await this.clientRepository.find();
+    }
+
 
   getMessages(): ChatMessage[] {
     return this.allMessages;

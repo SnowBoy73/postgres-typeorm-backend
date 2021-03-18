@@ -8,7 +8,8 @@ export interface IChatService {
 
     addClient(id: string, nickname: string): Promise<ChatClient>;
 
-    getClients(): ChatClient[];  // NEW observable
+    //getClients(): ChatClient[];  // NEW Promise
+    getClients(): Promise<ChatClient[]>;  // NEW Promise
 
     getMessages(): ChatMessage[];
 
