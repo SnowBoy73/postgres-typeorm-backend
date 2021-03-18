@@ -37,6 +37,7 @@ let ChatGateway = class ChatGateway {
         if (second < 10) {
             secZero = '0';
         }
+        console.log('-----', client.id);
         const sentAt = year + '-' + month + '-' + date + '@' + hour + ':' + minZero + minute + ':' + secZero + second;
         const chatMessage = await this.chatService.addMessage(message, client.id, sentAt);
         this.server.emit('newMessage', chatMessage);

@@ -45,10 +45,9 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
     if (second < 10) {
       secZero = '0';
     }
+    console.log('-----', client.id)
     const sentAt = year + '-' + month + '-' + date + '@' + hour + ':' + minZero + minute + ':' + secZero + second;
-    //const chatMessage = this.chatService.addMessage(message, client.id, sentAt);
     const chatMessage = await this.chatService.addMessage(message, client.id ,sentAt ) //
-
     this.server.emit('newMessage', chatMessage);
   }
 
@@ -80,7 +79,6 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
         {
           clients: chatClients,
           messages: chatMessages, //
-          //messages: this.chatService.getMessages(),
           client: chatClient,
         };
       client.emit('welcome', welcome);
@@ -90,7 +88,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
     }
   }
 
-  // FOR OBSERVABLE??
+  // FOR OBSERVABLE
   /*@SubscribeMessage('nickname')
   handleNicknameEvent(
     @MessageBody() nickname: string,

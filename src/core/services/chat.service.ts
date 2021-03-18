@@ -23,23 +23,6 @@ export class ChatService implements IChatService {
       private messageRepository: Repository<Message>
   ) {}
 
-  // USING OBSERVABLE
-  /* addMessage(message: string, clientId: string, sentAt: string): Observable<ChatMessage>
-  {
-      const client = this.clients.find((c) => c.id === clientId);
-      const msg = this.messageRepository.create();
-      msg.message = message,
-      msg.senderId = clientId,
-      msg.sentAt = sentAt;
-      return fromPromise(this.messageRepository.save(msg))
-          .pipe(
-              map((dbMessage) => {
-                  return { message: '' + message, sender: client, sentAt: sentAt };
-              })
-          );
-  }
-  */
-
     // USING PROMISE
     addMessage(message: string, clientId: string, sentAt: string): Observable<ChatMessage>
     {
@@ -55,6 +38,23 @@ export class ChatService implements IChatService {
                 })
             );
     }
+
+    // USING OBSERVABLE
+    /* addMessage(message: string, clientId: string, sentAt: string): Observable<ChatMessage>
+    {
+      const client = this.clients.find((c) => c.id === clientId);
+      const msg = this.messageRepository.create();
+      msg.message = message,
+      msg.senderId = clientId,
+      msg.sentAt = sentAt;
+      return fromPromise(this.messageRepository.save(msg))
+          .pipe(
+              map((dbMessage) => {
+                  return { message: '' + message, sender: client, sentAt: sentAt };
+              })
+          );
+  }
+  */
 
     // USING PROMISE
     async addClient(id: string, nickname: string): Promise<ChatClient> {
@@ -95,8 +95,7 @@ export class ChatService implements IChatService {
   }
   */
 
-
-  async getClients(): Promise<ChatClient[]> {
+    async getClients(): Promise<ChatClient[]> {
       const clients = await this.clientRepository.find();
       const chatClients: ChatClient[] = JSON.parse(JSON.stringify(clients));
       return chatClients;
@@ -107,11 +106,6 @@ export class ChatService implements IChatService {
       const chatMessages: ChatMessage[] = JSON.parse(JSON.stringify(messages));
       return chatMessages;
   }
-
-
-  /*getMessages(): ChatMessage[] {
-    return this.allMessages;
-  } */
 
   async deleteClient(id: string): Promise<void> {
       await this.clientRepository.delete({id: id});
