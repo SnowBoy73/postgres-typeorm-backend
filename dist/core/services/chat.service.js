@@ -47,6 +47,7 @@ let ChatService = class ChatService {
             throw new Error('Nickname already in use');
         }
         let client = this.clientRepository.create();
+        client.id = id;
         client.nickname = nickname;
         client = await this.clientRepository.save(client);
         return { id: '' + client.id, nickname: client.nickname };

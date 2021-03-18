@@ -3247,8 +3247,8 @@
         "affectsGlobalScope": false
       },
       "../src/infrastructure/data-source/entities/client.entity.ts": {
-        "version": "f85b435e228997a31915ca6d76514ac26cd1ce21be48cf4beedd9d88e0e45c1c",
-        "signature": "addbea7385ec7a4578b76eda5f39ed49006c71ac96e34655663b46971f4109c2",
+        "version": "569f656239e4f81ec46857f4aa3d3cc11c52c617cd86e143969f8e3384077180",
+        "signature": "cfea6d92d7aa20923be8fdfe9478d6f67d711406663baee00077d6279e78e43c",
         "affectsGlobalScope": false
       },
       "../src/infrastructure/data-source/entities/message.entity.ts": {
@@ -3952,7 +3952,7 @@
         "affectsGlobalScope": false
       },
       "../src/core/services/chat.service.ts": {
-        "version": "7013ae7ab90479fd091d9f7e8706b76a6d450d21a821af66d389f97e3a2b43c3",
+        "version": "e48ea120a141cb850d89c182a4f731ed26bb5e82aa3f9ff2400ba5bf19ffe055",
         "signature": "1f885ea835ec40af303ce79d160c3019784e9277904d1c9fe0d153e5efb02843",
         "affectsGlobalScope": false
       },

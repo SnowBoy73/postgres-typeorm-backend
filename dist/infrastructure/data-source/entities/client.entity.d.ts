@@ -1,5 +1,5 @@
 export declare class Client {
-    id: number;
+    id: string;
     nickname: string;
 }
 export default Client;

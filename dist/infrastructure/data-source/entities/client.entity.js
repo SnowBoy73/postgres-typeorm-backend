@@ -14,11 +14,11 @@ const typeorm_1 = require("typeorm");
 let Client = class Client {
 };
 __decorate([
-    typeorm_1.PrimaryGeneratedColumn(),
-    __metadata("design:type", Number)
+    typeorm_1.PrimaryColumn({ unique: true }),
+    __metadata("design:type", String)
 ], Client.prototype, "id", void 0);
 __decorate([
-    typeorm_1.Column(),
+    typeorm_1.Column({ unique: true }),
     __metadata("design:type", String)
 ], Client.prototype, "nickname", void 0);
 Client = __decorate([
