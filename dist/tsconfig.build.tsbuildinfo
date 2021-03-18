@@ -1577,13 +1577,13 @@
         "affectsGlobalScope": false
       },
       "../src/core/primary-ports/chat.service.interface.ts": {
-        "version": "c4d1abc153f04b2d482c7507d42878e8f8e80b95d81191bb6f65a8d22f76dd45",
-        "signature": "ccb24442d03c71e238e709db6d55bdc995fba59ebc3f9716598ed7b75b8540e0",
+        "version": "182b63838405e4acbd70d14cc0a437a325f079d2e4813800d91804d488090b07",
+        "signature": "92eda9fbe5e7844a1e33af94dd6660d6234e4b2bfa4f4547b9d3b97333667f1a",
         "affectsGlobalScope": false
       },
       "../src/api/gateways/chat.gateway.ts": {
-        "version": "507662af8361955f3284c67b7db83cdbace90452024393d07d8b1a8f7ffe6ec6",
-        "signature": "dc76faa3a20faad5ee1b3b04d5b0aa5d98bc8e9d0aaec97a6709c1e8f6cc1fa4",
+        "version": "913d0930fa54241f4b47c3c3ec4d88a5bedfc3398c39a9aef083afc5491694c7",
+        "signature": "26ea1700e7c261aef90faaaa3a65fa9170e958e8665961515f8decfe6528a7c8",
         "affectsGlobalScope": false
       },
       "../node_modules/typeorm/schema-builder/options/tablecolumnoptions.d.ts": {
@@ -3247,8 +3247,13 @@
         "affectsGlobalScope": false
       },
       "../src/infrastructure/data-source/entities/client.entity.ts": {
-        "version": "0b9314ebe788199fe86e1a86a89bee33294ab2d015fb67455460fe31c20aff6c",
+        "version": "f85b435e228997a31915ca6d76514ac26cd1ce21be48cf4beedd9d88e0e45c1c",
         "signature": "addbea7385ec7a4578b76eda5f39ed49006c71ac96e34655663b46971f4109c2",
+        "affectsGlobalScope": false
+      },
+      "../src/infrastructure/data-source/entities/message.entity.ts": {
+        "version": "54783be8164f989f9df39077cd9752b7b98fd00fb2c936c79051be30b6de0547",
+        "signature": "73f65c042e3ac14d6af9bc7fbbc7ef3ad61dd10b32b1a80f94eded8af7a752ae",
         "affectsGlobalScope": false
       },
       "../node_modules/rxjs/internal/operators/audit.d.ts": {
@@ -3771,13 +3776,188 @@
         "signature": "e80599bf4ef4579f28b0e623a64064a512330584dde58875b498ff8da7e347f7",
         "affectsGlobalScope": false
       },
+      "../node_modules/rxjs/internal/subjectsubscription.d.ts": {
+        "version": "d3b90621a899126e7ef2f59040e7bfd813e0cbcb87bd0c5e0bd4e0d417257cbd",
+        "signature": "d3b90621a899126e7ef2f59040e7bfd813e0cbcb87bd0c5e0bd4e0d417257cbd",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/observable/frompromise.d.ts": {
+        "version": "63d9a8bb05d5e0252b084c4a457c012fdcb78d63836d7c04b45221ab93819068",
+        "signature": "63d9a8bb05d5e0252b084c4a457c012fdcb78d63836d7c04b45221ab93819068",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/observable/fromiterable.d.ts": {
+        "version": "dbcf44bcbd51e03d6a014f6739a457a71f22e9b190caef3b94942d26074fb728",
+        "signature": "dbcf44bcbd51e03d6a014f6739a457a71f22e9b190caef3b94942d26074fb728",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/observable/dom/ajaxobservable.d.ts": {
+        "version": "7f6d3ef2715d5ca5404eb107e84e7ec3ee818d9cd1e0a5604e4448a2d73bbf8d",
+        "signature": "7f6d3ef2715d5ca5404eb107e84e7ec3ee818d9cd1e0a5604e4448a2d73bbf8d",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/observable/dom/ajax.d.ts": {
+        "version": "6e46df9fad03883b826f4c82b1d70a653a68769602aee73eef3e00e5b4d89cf3",
+        "signature": "6e46df9fad03883b826f4c82b1d70a653a68769602aee73eef3e00e5b4d89cf3",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/observable/dom/websocketsubject.d.ts": {
+        "version": "1382fd829c4aed94dbf48c12b2e612993e1b77965bd141d6ca3e07d55e467be7",
+        "signature": "1382fd829c4aed94dbf48c12b2e612993e1b77965bd141d6ca3e07d55e467be7",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/observable/dom/websocket.d.ts": {
+        "version": "772de7835f22689ecc41724bfaad1991770aad0a155ba7b7c2526b315d9fe19c",
+        "signature": "772de7835f22689ecc41724bfaad1991770aad0a155ba7b7c2526b315d9fe19c",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/observable/subscribeonobservable.d.ts": {
+        "version": "62e4dbcae7e7ed467874c57ea880e9eb2952583e81e83874c6ac4071e8673281",
+        "signature": "62e4dbcae7e7ed467874c57ea880e9eb2952583e81e83874c6ac4071e8673281",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/symbol/rxsubscriber.d.ts": {
+        "version": "3977d061c588d5ce13293ab68d2bd87ffc965592635f35b43441f98eb60065d8",
+        "signature": "3977d061c588d5ce13293ab68d2bd87ffc965592635f35b43441f98eb60065d8",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/symbol/iterator.d.ts": {
+        "version": "4c608fd897fed787b0923db484ffdcf6a7e6a66f9e118ccefc1db807f2d9c813",
+        "signature": "4c608fd897fed787b0923db484ffdcf6a7e6a66f9e118ccefc1db807f2d9c813",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/immediate.d.ts": {
+        "version": "0ce5b823ceaa7d76a3d329a0f109a61cd3615da383e887c356f142b20eb300b3",
+        "signature": "0ce5b823ceaa7d76a3d329a0f109a61cd3615da383e887c356f142b20eb300b3",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/applymixins.d.ts": {
+        "version": "5853c1f854868393edd2a14f72fdf8aedf6e8508e9c1e1db648dd0686be314bc",
+        "signature": "5853c1f854868393edd2a14f72fdf8aedf6e8508e9c1e1db648dd0686be314bc",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/errorobject.d.ts": {
+        "version": "e1603a12ed84f4322792328e62c8efdd3d2668883af82ebb29a92be9ec5d006d",
+        "signature": "e1603a12ed84f4322792328e62c8efdd3d2668883af82ebb29a92be9ec5d006d",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/hostreporterror.d.ts": {
+        "version": "ce6cd53ca2d698c3f5096f81658134108fc8aa2aec4b420933fe4f98c67366dd",
+        "signature": "ce6cd53ca2d698c3f5096f81658134108fc8aa2aec4b420933fe4f98c67366dd",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/isarray.d.ts": {
+        "version": "5c762af514cc63a60f4ed90ca9e262cecf8506b07060c0bf8f76724d18000b1b",
+        "signature": "5c762af514cc63a60f4ed90ca9e262cecf8506b07060c0bf8f76724d18000b1b",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/isarraylike.d.ts": {
+        "version": "dbb1c23fae7f956e43c821e8e7ec6310ee3f47d97d48a5425c7608182ce447f6",
+        "signature": "dbb1c23fae7f956e43c821e8e7ec6310ee3f47d97d48a5425c7608182ce447f6",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/isdate.d.ts": {
+        "version": "dfda71fb8fe822f5ae3dab094819b76373595e8618e62827585f92b3129fb404",
+        "signature": "dfda71fb8fe822f5ae3dab094819b76373595e8618e62827585f92b3129fb404",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/isfunction.d.ts": {
+        "version": "c889da54f7a5a5514fba669c91d02147768677cba0f4eeda4a08accc2c9fc183",
+        "signature": "c889da54f7a5a5514fba669c91d02147768677cba0f4eeda4a08accc2c9fc183",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/isiterable.d.ts": {
+        "version": "474577f1c73d2f8212940a6fc2c78b59fd58dd3b5b375c9df0d928afec41ea6b",
+        "signature": "474577f1c73d2f8212940a6fc2c78b59fd58dd3b5b375c9df0d928afec41ea6b",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/isnumeric.d.ts": {
+        "version": "ece8bd3332cfc9df2608d26e14cfb7c7aae68e5b5af122c42e78966f56a5a80a",
+        "signature": "ece8bd3332cfc9df2608d26e14cfb7c7aae68e5b5af122c42e78966f56a5a80a",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/isobject.d.ts": {
+        "version": "8dfcb3e88102da71e270e99dbd0ebf4fe14e49c0a45e9af83515dec0d5d09517",
+        "signature": "8dfcb3e88102da71e270e99dbd0ebf4fe14e49c0a45e9af83515dec0d5d09517",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/isinteropobservable.d.ts": {
+        "version": "4e49b44534839185ee5ed4754c08a6d061795180b2752405d5e3950439677cdd",
+        "signature": "4e49b44534839185ee5ed4754c08a6d061795180b2752405d5e3950439677cdd",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/ispromise.d.ts": {
+        "version": "f434b90f83b34647aecc16e51ee915783ecefa04ac6d96ef66b6e4e8abb53ddd",
+        "signature": "f434b90f83b34647aecc16e51ee915783ecefa04ac6d96ef66b6e4e8abb53ddd",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/isscheduler.d.ts": {
+        "version": "5b602191995b7d4b8d5679daf9e22f1d002fb9ec290f6cfc232a58feede55a1e",
+        "signature": "5b602191995b7d4b8d5679daf9e22f1d002fb9ec290f6cfc232a58feede55a1e",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/not.d.ts": {
+        "version": "d72d2bd06288d210268490dfcf0dd8ff17d02fb214f976a0b1eaa987d11a3329",
+        "signature": "d72d2bd06288d210268490dfcf0dd8ff17d02fb214f976a0b1eaa987d11a3329",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/root.d.ts": {
+        "version": "92a499d236f3019dea389d8466076df161c79b236e8190fa634c455c4ac80203",
+        "signature": "92a499d236f3019dea389d8466076df161c79b236e8190fa634c455c4ac80203",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/subscribeto.d.ts": {
+        "version": "7018d0e0419e7dbfde9422197a73ae2974ede43acafb07a4f7b057f16540fd1f",
+        "signature": "7018d0e0419e7dbfde9422197a73ae2974ede43acafb07a4f7b057f16540fd1f",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/subscribetoarray.d.ts": {
+        "version": "7423584e3a62ccb9343c773b7d6429524bf918d168e0093405f52353bfaa138b",
+        "signature": "7423584e3a62ccb9343c773b7d6429524bf918d168e0093405f52353bfaa138b",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/subscribetoiterable.d.ts": {
+        "version": "def19eda95dbf7af214948e99b7c90f9d045a76bffe1eb271dd2906a8ef16f7d",
+        "signature": "def19eda95dbf7af214948e99b7c90f9d045a76bffe1eb271dd2906a8ef16f7d",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/subscribetoobservable.d.ts": {
+        "version": "dfc70d31b38b4a085baaf5a4217d8f9e5ad92e88315bdfddaeda1a0de2255c76",
+        "signature": "dfc70d31b38b4a085baaf5a4217d8f9e5ad92e88315bdfddaeda1a0de2255c76",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/subscribetopromise.d.ts": {
+        "version": "49ac2795bf9504cc523a4556c712bfa7fcce7ece4328f84e26820a6d08014cd4",
+        "signature": "49ac2795bf9504cc523a4556c712bfa7fcce7ece4328f84e26820a6d08014cd4",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/subscribetoresult.d.ts": {
+        "version": "781e2b4c6f693dcdc551900277d51f546c993f3246d192c34c39593fb11959bf",
+        "signature": "781e2b4c6f693dcdc551900277d51f546c993f3246d192c34c39593fb11959bf",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/tosubscriber.d.ts": {
+        "version": "8ad39773abf835e961ff10e6c2f3b2e41227307d9299fb3ebe76e320c057c5ad",
+        "signature": "8ad39773abf835e961ff10e6c2f3b2e41227307d9299fb3ebe76e320c057c5ad",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal/util/trycatch.d.ts": {
+        "version": "fb102e1c90fd6607f8eb70a5011c9583b9443913e9d573203f7d1e56ff2f3321",
+        "signature": "fb102e1c90fd6607f8eb70a5011c9583b9443913e9d573203f7d1e56ff2f3321",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/rxjs/internal-compatibility/index.d.ts": {
+        "version": "fb4c549ba1f835e3ef368bf264ee277a24091651d18293ac1d55b319afd93801",
+        "signature": "fb4c549ba1f835e3ef368bf264ee277a24091651d18293ac1d55b319afd93801",
+        "affectsGlobalScope": false
+      },
       "../src/core/services/chat.service.ts": {
-        "version": "803058ec3d4d44a62f9ba03e20884a4342dfa35adc8b6b19e18d875189dbe1a2",
-        "signature": "29e2ed76f9664aba1a7726b60b79574d77b27e4a5052290833beb6f3e961d3bd",
+        "version": "7013ae7ab90479fd091d9f7e8706b76a6d450d21a821af66d389f97e3a2b43c3",
+        "signature": "1f885ea835ec40af303ce79d160c3019784e9277904d1c9fe0d153e5efb02843",
         "affectsGlobalScope": false
       },
       "../src/api/chat.module.ts": {
-        "version": "f894321e567d2f84a39241c375eeecec82b14eddae8e42bdd7620f7367fc3976",
+        "version": "1de472752cb3005aea4ff9976fc0a880c91fc8ede3f829333c3eeb10c16cacb7",
         "signature": "331ca11e3787e052563694011f0c6a02519dd2acfaff07e2e38c22b2ffd0cae7",
         "affectsGlobalScope": false
       },
@@ -3852,7 +4032,7 @@
         "affectsGlobalScope": false
       },
       "../src/infrastructure/data-source/postgres/database.module.ts": {
-        "version": "4a0775e75c43130beadb2be4cf006eb3283f2f8bf1beed964e154b1ad2999a9e",
+        "version": "a0b0547e3eab46aa7893985844bc3c8d2400c8602790dbf8b64d571e0de03879",
         "signature": "a7ad670f373dd5665c73c7dc09a8e28b976a63bd7ed08def7c1c13456e87d3dc",
         "affectsGlobalScope": false
       },
@@ -4037,7 +4217,7 @@
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "e25d9bd8f80b6ffbcc8826ed1b407e747e4fbe346c5bab62cbe5837da4eeb189",
+        "version": "842966be75ee5b68da7421e796a0318e04878e3c3584ae17ca87432102e2e169",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -5560,6 +5740,66 @@
         "../node_modules/rxjs/internal/util/timeouterror.d.ts",
         "../node_modules/rxjs/internal/util/unsubscriptionerror.d.ts"
       ],
+      "../node_modules/rxjs/internal-compatibility/index.d.ts": [
+        "../node_modules/rxjs/internal/config.d.ts",
+        "../node_modules/rxjs/internal/innersubscriber.d.ts",
+        "../node_modules/rxjs/internal/observable/combinelatest.d.ts",
+        "../node_modules/rxjs/internal/observable/dom/ajax.d.ts",
+        "../node_modules/rxjs/internal/observable/dom/ajaxobservable.d.ts",
+        "../node_modules/rxjs/internal/observable/dom/websocket.d.ts",
+        "../node_modules/rxjs/internal/observable/dom/websocketsubject.d.ts",
+        "../node_modules/rxjs/internal/observable/fromevent.d.ts",
+        "../node_modules/rxjs/internal/observable/fromiterable.d.ts",
+        "../node_modules/rxjs/internal/observable/frompromise.d.ts",
+        "../node_modules/rxjs/internal/observable/generate.d.ts",
+        "../node_modules/rxjs/internal/observable/range.d.ts",
+        "../node_modules/rxjs/internal/observable/subscribeonobservable.d.ts",
+        "../node_modules/rxjs/internal/operators/groupby.d.ts",
+        "../node_modules/rxjs/internal/operators/sharereplay.d.ts",
+        "../node_modules/rxjs/internal/operators/throttle.d.ts",
+        "../node_modules/rxjs/internal/operators/timeinterval.d.ts",
+        "../node_modules/rxjs/internal/operators/timestamp.d.ts",
+        "../node_modules/rxjs/internal/outersubscriber.d.ts",
+        "../node_modules/rxjs/internal/scheduler.d.ts",
+        "../node_modules/rxjs/internal/subject.d.ts",
+        "../node_modules/rxjs/internal/subjectsubscription.d.ts",
+        "../node_modules/rxjs/internal/subscriber.d.ts",
+        "../node_modules/rxjs/internal/symbol/iterator.d.ts",
+        "../node_modules/rxjs/internal/symbol/observable.d.ts",
+        "../node_modules/rxjs/internal/symbol/rxsubscriber.d.ts",
+        "../node_modules/rxjs/internal/util/applymixins.d.ts",
+        "../node_modules/rxjs/internal/util/argumentoutofrangeerror.d.ts",
+        "../node_modules/rxjs/internal/util/emptyerror.d.ts",
+        "../node_modules/rxjs/internal/util/errorobject.d.ts",
+        "../node_modules/rxjs/internal/util/hostreporterror.d.ts",
+        "../node_modules/rxjs/internal/util/identity.d.ts",
+        "../node_modules/rxjs/internal/util/immediate.d.ts",
+        "../node_modules/rxjs/internal/util/isarray.d.ts",
+        "../node_modules/rxjs/internal/util/isarraylike.d.ts",
+        "../node_modules/rxjs/internal/util/isdate.d.ts",
+        "../node_modules/rxjs/internal/util/isfunction.d.ts",
+        "../node_modules/rxjs/internal/util/isinteropobservable.d.ts",
+        "../node_modules/rxjs/internal/util/isiterable.d.ts",
+        "../node_modules/rxjs/internal/util/isnumeric.d.ts",
+        "../node_modules/rxjs/internal/util/isobject.d.ts",
+        "../node_modules/rxjs/internal/util/ispromise.d.ts",
+        "../node_modules/rxjs/internal/util/isscheduler.d.ts",
+        "../node_modules/rxjs/internal/util/noop.d.ts",
+        "../node_modules/rxjs/internal/util/not.d.ts",
+        "../node_modules/rxjs/internal/util/objectunsubscribederror.d.ts",
+        "../node_modules/rxjs/internal/util/pipe.d.ts",
+        "../node_modules/rxjs/internal/util/root.d.ts",
+        "../node_modules/rxjs/internal/util/subscribeto.d.ts",
+        "../node_modules/rxjs/internal/util/subscribetoarray.d.ts",
+        "../node_modules/rxjs/internal/util/subscribetoiterable.d.ts",
+        "../node_modules/rxjs/internal/util/subscribetoobservable.d.ts",
+        "../node_modules/rxjs/internal/util/subscribetopromise.d.ts",
+        "../node_modules/rxjs/internal/util/subscribetoresult.d.ts",
+        "../node_modules/rxjs/internal/util/timeouterror.d.ts",
+        "../node_modules/rxjs/internal/util/tosubscriber.d.ts",
+        "../node_modules/rxjs/internal/util/trycatch.d.ts",
+        "../node_modules/rxjs/internal/util/unsubscriptionerror.d.ts"
+      ],
       "../node_modules/rxjs/internal/asyncsubject.d.ts": [
         "../node_modules/rxjs/internal/subject.d.ts",
         "../node_modules/rxjs/internal/subscriber.d.ts",
@@ -5619,6 +5859,25 @@
         "../node_modules/rxjs/internal/observable.d.ts",
         "../node_modules/rxjs/internal/types.d.ts"
       ],
+      "../node_modules/rxjs/internal/observable/dom/ajax.d.ts": [
+        "../node_modules/rxjs/internal/observable/dom/ajaxobservable.d.ts"
+      ],
+      "../node_modules/rxjs/internal/observable/dom/ajaxobservable.d.ts": [
+        "../node_modules/rxjs/internal/observable.d.ts",
+        "../node_modules/rxjs/internal/subscriber.d.ts",
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
+      "../node_modules/rxjs/internal/observable/dom/websocket.d.ts": [
+        "../node_modules/rxjs/internal/observable/dom/websocketsubject.d.ts"
+      ],
+      "../node_modules/rxjs/internal/observable/dom/websocketsubject.d.ts": [
+        "../node_modules/rxjs/internal/observable.d.ts",
+        "../node_modules/rxjs/internal/operator.d.ts",
+        "../node_modules/rxjs/internal/subject.d.ts",
+        "../node_modules/rxjs/internal/subscriber.d.ts",
+        "../node_modules/rxjs/internal/subscription.d.ts",
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
       "../node_modules/rxjs/internal/observable/empty.d.ts": [
         "../node_modules/rxjs/internal/observable.d.ts",
         "../node_modules/rxjs/internal/types.d.ts"
@@ -5637,6 +5896,14 @@
       "../node_modules/rxjs/internal/observable/fromeventpattern.d.ts": [
         "../node_modules/rxjs/internal/observable.d.ts",
         "../node_modules/rxjs/internal/observable/fromevent.d.ts"
+      ],
+      "../node_modules/rxjs/internal/observable/fromiterable.d.ts": [
+        "../node_modules/rxjs/internal/observable.d.ts",
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
+      "../node_modules/rxjs/internal/observable/frompromise.d.ts": [
+        "../node_modules/rxjs/internal/observable.d.ts",
+        "../node_modules/rxjs/internal/types.d.ts"
       ],
       "../node_modules/rxjs/internal/observable/generate.d.ts": [
         "../node_modules/rxjs/internal/observable.d.ts",
@@ -5684,6 +5951,12 @@
       ],
       "../node_modules/rxjs/internal/observable/range.d.ts": [
         "../node_modules/rxjs/internal/observable.d.ts",
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
+      "../node_modules/rxjs/internal/observable/subscribeonobservable.d.ts": [
+        "../node_modules/rxjs/internal/observable.d.ts",
+        "../node_modules/rxjs/internal/subscriber.d.ts",
+        "../node_modules/rxjs/internal/subscription.d.ts",
         "../node_modules/rxjs/internal/types.d.ts"
       ],
       "../node_modules/rxjs/internal/observable/throwerror.d.ts": [
@@ -6154,6 +6427,11 @@
         "../node_modules/rxjs/internal/subscription.d.ts",
         "../node_modules/rxjs/internal/types.d.ts"
       ],
+      "../node_modules/rxjs/internal/subjectsubscription.d.ts": [
+        "../node_modules/rxjs/internal/subject.d.ts",
+        "../node_modules/rxjs/internal/subscription.d.ts",
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
       "../node_modules/rxjs/internal/subscriber.d.ts": [
         "../node_modules/rxjs/internal/subscription.d.ts",
         "../node_modules/rxjs/internal/types.d.ts"
@@ -6165,10 +6443,42 @@
         "../node_modules/rxjs/internal/observable.d.ts",
         "../node_modules/rxjs/internal/subscription.d.ts"
       ],
+      "../node_modules/rxjs/internal/util/isinteropobservable.d.ts": [
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
       "../node_modules/rxjs/internal/util/isobservable.d.ts": [
         "../node_modules/rxjs/internal/observable.d.ts"
       ],
+      "../node_modules/rxjs/internal/util/isscheduler.d.ts": [
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
       "../node_modules/rxjs/internal/util/pipe.d.ts": [
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
+      "../node_modules/rxjs/internal/util/subscribeto.d.ts": [
+        "../node_modules/rxjs/internal/subscriber.d.ts",
+        "../node_modules/rxjs/internal/subscription.d.ts",
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
+      "../node_modules/rxjs/internal/util/subscribetoarray.d.ts": [
+        "../node_modules/rxjs/internal/subscriber.d.ts"
+      ],
+      "../node_modules/rxjs/internal/util/subscribetoiterable.d.ts": [
+        "../node_modules/rxjs/internal/subscriber.d.ts"
+      ],
+      "../node_modules/rxjs/internal/util/subscribetoobservable.d.ts": [
+        "../node_modules/rxjs/internal/subscriber.d.ts"
+      ],
+      "../node_modules/rxjs/internal/util/subscribetopromise.d.ts": [
+        "../node_modules/rxjs/internal/subscriber.d.ts"
+      ],
+      "../node_modules/rxjs/internal/util/subscribetoresult.d.ts": [
+        "../node_modules/rxjs/internal/innersubscriber.d.ts",
+        "../node_modules/rxjs/internal/outersubscriber.d.ts",
+        "../node_modules/rxjs/internal/subscription.d.ts"
+      ],
+      "../node_modules/rxjs/internal/util/tosubscriber.d.ts": [
+        "../node_modules/rxjs/internal/subscriber.d.ts",
         "../node_modules/rxjs/internal/types.d.ts"
       ],
       "../node_modules/rxjs/operators/index.d.ts": [
@@ -7511,7 +7821,8 @@
         "../src/api/gateways/chat.gateway.ts",
         "../src/core/primary-ports/chat.service.interface.ts",
         "../src/core/services/chat.service.ts",
-        "../src/infrastructure/data-source/entities/client.entity.ts"
+        "../src/infrastructure/data-source/entities/client.entity.ts",
+        "../src/infrastructure/data-source/entities/message.entity.ts"
       ],
       "../src/api/dtos/chat-message.dto.ts": [
         "../src/api/dtos/chat-client.dto.ts"
@@ -7553,23 +7864,30 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../node_modules/rxjs/index.d.ts",
+        "../node_modules/rxjs/internal-compatibility/index.d.ts",
         "../node_modules/rxjs/operators/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
         "../src/core/models/chat-client.model.ts",
         "../src/core/models/chat-message.model.ts",
         "../src/core/primary-ports/chat.service.interface.ts",
-        "../src/infrastructure/data-source/entities/client.entity.ts"
+        "../src/infrastructure/data-source/entities/client.entity.ts",
+        "../src/infrastructure/data-source/entities/message.entity.ts"
       ],
       "../src/infrastructure/data-source/entities/client.entity.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/infrastructure/data-source/entities/message.entity.ts": [
         "../node_modules/typeorm/index.d.ts"
       ],
       "../src/infrastructure/data-source/postgres/database.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/config/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
-        "../src/infrastructure/data-source/entities/client.entity.ts"
+        "../src/infrastructure/data-source/entities/client.entity.ts",
+        "../src/infrastructure/data-source/entities/message.entity.ts"
       ],
       "../src/main.ts": [
+        "../node_modules/@nestjs/config/index.d.ts",
         "../node_modules/@nestjs/core/index.d.ts",
         "../src/app.module.ts"
       ]
@@ -8758,6 +9076,66 @@
         "../node_modules/rxjs/internal/util/timeouterror.d.ts",
         "../node_modules/rxjs/internal/util/unsubscriptionerror.d.ts"
       ],
+      "../node_modules/rxjs/internal-compatibility/index.d.ts": [
+        "../node_modules/rxjs/internal/config.d.ts",
+        "../node_modules/rxjs/internal/innersubscriber.d.ts",
+        "../node_modules/rxjs/internal/observable/combinelatest.d.ts",
+        "../node_modules/rxjs/internal/observable/dom/ajax.d.ts",
+        "../node_modules/rxjs/internal/observable/dom/ajaxobservable.d.ts",
+        "../node_modules/rxjs/internal/observable/dom/websocket.d.ts",
+        "../node_modules/rxjs/internal/observable/dom/websocketsubject.d.ts",
+        "../node_modules/rxjs/internal/observable/fromevent.d.ts",
+        "../node_modules/rxjs/internal/observable/fromiterable.d.ts",
+        "../node_modules/rxjs/internal/observable/frompromise.d.ts",
+        "../node_modules/rxjs/internal/observable/generate.d.ts",
+        "../node_modules/rxjs/internal/observable/range.d.ts",
+        "../node_modules/rxjs/internal/observable/subscribeonobservable.d.ts",
+        "../node_modules/rxjs/internal/operators/groupby.d.ts",
+        "../node_modules/rxjs/internal/operators/sharereplay.d.ts",
+        "../node_modules/rxjs/internal/operators/throttle.d.ts",
+        "../node_modules/rxjs/internal/operators/timeinterval.d.ts",
+        "../node_modules/rxjs/internal/operators/timestamp.d.ts",
+        "../node_modules/rxjs/internal/outersubscriber.d.ts",
+        "../node_modules/rxjs/internal/scheduler.d.ts",
+        "../node_modules/rxjs/internal/subject.d.ts",
+        "../node_modules/rxjs/internal/subjectsubscription.d.ts",
+        "../node_modules/rxjs/internal/subscriber.d.ts",
+        "../node_modules/rxjs/internal/symbol/iterator.d.ts",
+        "../node_modules/rxjs/internal/symbol/observable.d.ts",
+        "../node_modules/rxjs/internal/symbol/rxsubscriber.d.ts",
+        "../node_modules/rxjs/internal/util/applymixins.d.ts",
+        "../node_modules/rxjs/internal/util/argumentoutofrangeerror.d.ts",
+        "../node_modules/rxjs/internal/util/emptyerror.d.ts",
+        "../node_modules/rxjs/internal/util/errorobject.d.ts",
+        "../node_modules/rxjs/internal/util/hostreporterror.d.ts",
+        "../node_modules/rxjs/internal/util/identity.d.ts",
+        "../node_modules/rxjs/internal/util/immediate.d.ts",
+        "../node_modules/rxjs/internal/util/isarray.d.ts",
+        "../node_modules/rxjs/internal/util/isarraylike.d.ts",
+        "../node_modules/rxjs/internal/util/isdate.d.ts",
+        "../node_modules/rxjs/internal/util/isfunction.d.ts",
+        "../node_modules/rxjs/internal/util/isinteropobservable.d.ts",
+        "../node_modules/rxjs/internal/util/isiterable.d.ts",
+        "../node_modules/rxjs/internal/util/isnumeric.d.ts",
+        "../node_modules/rxjs/internal/util/isobject.d.ts",
+        "../node_modules/rxjs/internal/util/ispromise.d.ts",
+        "../node_modules/rxjs/internal/util/isscheduler.d.ts",
+        "../node_modules/rxjs/internal/util/noop.d.ts",
+        "../node_modules/rxjs/internal/util/not.d.ts",
+        "../node_modules/rxjs/internal/util/objectunsubscribederror.d.ts",
+        "../node_modules/rxjs/internal/util/pipe.d.ts",
+        "../node_modules/rxjs/internal/util/root.d.ts",
+        "../node_modules/rxjs/internal/util/subscribeto.d.ts",
+        "../node_modules/rxjs/internal/util/subscribetoarray.d.ts",
+        "../node_modules/rxjs/internal/util/subscribetoiterable.d.ts",
+        "../node_modules/rxjs/internal/util/subscribetoobservable.d.ts",
+        "../node_modules/rxjs/internal/util/subscribetopromise.d.ts",
+        "../node_modules/rxjs/internal/util/subscribetoresult.d.ts",
+        "../node_modules/rxjs/internal/util/timeouterror.d.ts",
+        "../node_modules/rxjs/internal/util/tosubscriber.d.ts",
+        "../node_modules/rxjs/internal/util/trycatch.d.ts",
+        "../node_modules/rxjs/internal/util/unsubscriptionerror.d.ts"
+      ],
       "../node_modules/rxjs/internal/asyncsubject.d.ts": [
         "../node_modules/rxjs/internal/subject.d.ts",
         "../node_modules/rxjs/internal/subscriber.d.ts",
@@ -8817,6 +9195,25 @@
         "../node_modules/rxjs/internal/observable.d.ts",
         "../node_modules/rxjs/internal/types.d.ts"
       ],
+      "../node_modules/rxjs/internal/observable/dom/ajax.d.ts": [
+        "../node_modules/rxjs/internal/observable/dom/ajaxobservable.d.ts"
+      ],
+      "../node_modules/rxjs/internal/observable/dom/ajaxobservable.d.ts": [
+        "../node_modules/rxjs/internal/observable.d.ts",
+        "../node_modules/rxjs/internal/subscriber.d.ts",
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
+      "../node_modules/rxjs/internal/observable/dom/websocket.d.ts": [
+        "../node_modules/rxjs/internal/observable/dom/websocketsubject.d.ts"
+      ],
+      "../node_modules/rxjs/internal/observable/dom/websocketsubject.d.ts": [
+        "../node_modules/rxjs/internal/observable.d.ts",
+        "../node_modules/rxjs/internal/operator.d.ts",
+        "../node_modules/rxjs/internal/subject.d.ts",
+        "../node_modules/rxjs/internal/subscriber.d.ts",
+        "../node_modules/rxjs/internal/subscription.d.ts",
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
       "../node_modules/rxjs/internal/observable/empty.d.ts": [
         "../node_modules/rxjs/internal/observable.d.ts",
         "../node_modules/rxjs/internal/types.d.ts"
@@ -8835,6 +9232,14 @@
       "../node_modules/rxjs/internal/observable/fromeventpattern.d.ts": [
         "../node_modules/rxjs/internal/observable.d.ts",
         "../node_modules/rxjs/internal/observable/fromevent.d.ts"
+      ],
+      "../node_modules/rxjs/internal/observable/fromiterable.d.ts": [
+        "../node_modules/rxjs/internal/observable.d.ts",
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
+      "../node_modules/rxjs/internal/observable/frompromise.d.ts": [
+        "../node_modules/rxjs/internal/observable.d.ts",
+        "../node_modules/rxjs/internal/types.d.ts"
       ],
       "../node_modules/rxjs/internal/observable/generate.d.ts": [
         "../node_modules/rxjs/internal/observable.d.ts",
@@ -8882,6 +9287,12 @@
       ],
       "../node_modules/rxjs/internal/observable/range.d.ts": [
         "../node_modules/rxjs/internal/observable.d.ts",
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
+      "../node_modules/rxjs/internal/observable/subscribeonobservable.d.ts": [
+        "../node_modules/rxjs/internal/observable.d.ts",
+        "../node_modules/rxjs/internal/subscriber.d.ts",
+        "../node_modules/rxjs/internal/subscription.d.ts",
         "../node_modules/rxjs/internal/types.d.ts"
       ],
       "../node_modules/rxjs/internal/observable/throwerror.d.ts": [
@@ -9352,6 +9763,11 @@
         "../node_modules/rxjs/internal/subscription.d.ts",
         "../node_modules/rxjs/internal/types.d.ts"
       ],
+      "../node_modules/rxjs/internal/subjectsubscription.d.ts": [
+        "../node_modules/rxjs/internal/subject.d.ts",
+        "../node_modules/rxjs/internal/subscription.d.ts",
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
       "../node_modules/rxjs/internal/subscriber.d.ts": [
         "../node_modules/rxjs/internal/subscription.d.ts",
         "../node_modules/rxjs/internal/types.d.ts"
@@ -9363,10 +9779,42 @@
         "../node_modules/rxjs/internal/observable.d.ts",
         "../node_modules/rxjs/internal/subscription.d.ts"
       ],
+      "../node_modules/rxjs/internal/util/isinteropobservable.d.ts": [
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
       "../node_modules/rxjs/internal/util/isobservable.d.ts": [
         "../node_modules/rxjs/internal/observable.d.ts"
       ],
+      "../node_modules/rxjs/internal/util/isscheduler.d.ts": [
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
       "../node_modules/rxjs/internal/util/pipe.d.ts": [
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
+      "../node_modules/rxjs/internal/util/subscribeto.d.ts": [
+        "../node_modules/rxjs/internal/subscriber.d.ts",
+        "../node_modules/rxjs/internal/subscription.d.ts",
+        "../node_modules/rxjs/internal/types.d.ts"
+      ],
+      "../node_modules/rxjs/internal/util/subscribetoarray.d.ts": [
+        "../node_modules/rxjs/internal/subscriber.d.ts"
+      ],
+      "../node_modules/rxjs/internal/util/subscribetoiterable.d.ts": [
+        "../node_modules/rxjs/internal/subscriber.d.ts"
+      ],
+      "../node_modules/rxjs/internal/util/subscribetoobservable.d.ts": [
+        "../node_modules/rxjs/internal/subscriber.d.ts"
+      ],
+      "../node_modules/rxjs/internal/util/subscribetopromise.d.ts": [
+        "../node_modules/rxjs/internal/subscriber.d.ts"
+      ],
+      "../node_modules/rxjs/internal/util/subscribetoresult.d.ts": [
+        "../node_modules/rxjs/internal/innersubscriber.d.ts",
+        "../node_modules/rxjs/internal/outersubscriber.d.ts",
+        "../node_modules/rxjs/internal/subscription.d.ts"
+      ],
+      "../node_modules/rxjs/internal/util/tosubscriber.d.ts": [
+        "../node_modules/rxjs/internal/subscriber.d.ts",
         "../node_modules/rxjs/internal/types.d.ts"
       ],
       "../node_modules/rxjs/operators/index.d.ts": [
@@ -10732,7 +11180,8 @@
         "../src/core/models/chat-client.model.ts",
         "../src/core/models/chat-message.model.ts",
         "../src/core/primary-ports/chat.service.interface.ts",
-        "../src/infrastructure/data-source/entities/client.entity.ts"
+        "../src/infrastructure/data-source/entities/client.entity.ts",
+        "../src/infrastructure/data-source/entities/message.entity.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [

@@ -11,9 +11,6 @@ import { Socket } from 'socket.io';
 import { WelcomeDto} from '../dtos/welcome.dto';
 import { Inject } from '@nestjs/common';
 
-//  WAS import { ChatService } from '../../core/services/chat.service';
-//import { IChatService, IChatServiceProvider } from '../../core/services/chat.service';
-
 import {
   IChatService,
   IChatServiceProvider,
@@ -64,7 +61,31 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
     }
   }
 
+  // FOR PROMISE
   @SubscribeMessage('nickname')
+  async handleNicknameEvent(
+      @MessageBody() nickname: string,
+      @ConnectedSocket() client: Socket,
+  ): Promise<void> {
+    try
+    {
+      const chatClient = await this.chatService.addClient(client.id, nickname)
+      console.log('chatClient', chatClient)
+      const welcome: WelcomeDto =
+        {
+          clients: this.chatService.getClients(),
+          messages: this.chatService.getMessages(),
+          client: chatClient,
+        };
+      client.emit('welcome', welcome);
+      this.server.emit('clients', this.chatService.getClients());
+    } catch (e) {
+    client.error(e.message );
+    }
+  }
+
+  // FOR OBSERVABLE??
+  /*@SubscribeMessage('nickname')
   handleNicknameEvent(
     @MessageBody() nickname: string,
     @ConnectedSocket() client: Socket,
@@ -87,6 +108,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
       client.emit('chat-error', { error: e.message });
     }
   }
+   */
 
   handleConnection(client: Socket, ...args: any[]): any {
     console.log('Client Connect', client.id);

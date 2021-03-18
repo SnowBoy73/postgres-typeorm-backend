@@ -4,11 +4,11 @@ import {Observable} from 'rxjs';
 
 export const IChatServiceProvider = 'IChatServiceProvider';
 export interface IChatService {
-    addMessage(message: string, clientId: string, sentAt: string): ChatMessage;
+    addMessage(message: string, clientId: string, sentAt: string): Observable<ChatMessage>;
 
-    addClient(id: string, nickname: string): Observable<ChatClient>;
+    addClient(id: string, nickname: string): Promise<ChatClient>;
 
-    getClients(): ChatClient[];
+    getClients(): ChatClient[];  // NEW observable
 
     getMessages(): ChatMessage[];
 

@@ -17,38 +17,39 @@ const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
 const client_entity_1 = require("../../infrastructure/data-source/entities/client.entity");
-const rxjs_1 = require("rxjs");
+const message_entity_1 = require("../../infrastructure/data-source/entities/message.entity");
 const operators_1 = require("rxjs/operators");
+const internal_compatibility_1 = require("rxjs/internal-compatibility");
 let ChatService = class ChatService {
-    constructor(clientRepository) {
+    constructor(clientRepository, messageRepository) {
         this.clientRepository = clientRepository;
+        this.messageRepository = messageRepository;
         this.allMessages = [];
         this.clients = [];
     }
     addMessage(message, clientId, sentAt) {
         const client = this.clients.find((c) => c.id === clientId);
-        const chatMessage = {
-            message: message,
-            sender: client,
-            sentAt: sentAt,
-        };
-        this.allMessages.push(chatMessage);
-        return chatMessage;
+        const msg = this.messageRepository.create();
+        msg.message = message,
+            msg.senderId = clientId,
+            msg.sentAt = sentAt;
+        return internal_compatibility_1.fromPromise(this.messageRepository.save(msg))
+            .pipe(operators_1.map((dbMessage) => {
+            return { message: '' + message, sender: client, sentAt: sentAt };
+        }));
     }
-    addClient(id, nickname) {
+    async addClient(id, nickname) {
         let chatClient = this.clients.find((c) => c.nickname === nickname && c.id === id);
         if (chatClient) {
-            return rxjs_1.of(chatClient);
+            return chatClient;
         }
         if (this.clients.find((c) => c.nickname === nickname)) {
             throw new Error('Nickname already in use');
         }
-        const client = this.clientRepository.create();
+        let client = this.clientRepository.create();
         client.nickname = nickname;
-        return rxjs_1.of(this.clientRepository.save(client))
-            .pipe(operators_1.map((dbClient) => {
-            return { id: '' + client.id, nickname: nickname };
-        }));
+        client = await this.clientRepository.save(client);
+        return { id: '' + client.id, nickname: client.nickname };
     }
     getClients() {
         return this.clients;
@@ -56,7 +57,7 @@ let ChatService = class ChatService {
     getMessages() {
         return this.allMessages;
     }
-    deleteClient(id) {
+    async deleteClient(id) {
         this.clients = this.clients.filter((c) => id !== id);
     }
     updateTyping(typing, id) {
@@ -70,7 +71,9 @@ let ChatService = class ChatService {
 ChatService = __decorate([
     common_1.Injectable(),
     __param(0, typeorm_1.InjectRepository(client_entity_1.default)),
-    __metadata("design:paramtypes", [typeorm_2.Repository])
+    __param(1, typeorm_1.InjectRepository(message_entity_1.default)),
+    __metadata("design:paramtypes", [typeorm_2.Repository,
+        typeorm_2.Repository])
 ], ChatService);
 exports.ChatService = ChatService;
 //# sourceMappingURL=chat.service.js.map

@@ -11,6 +11,7 @@ const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const config_1 = require("@nestjs/config");
 const client_entity_1 = require("../entities/client.entity");
+const message_entity_1 = require("../entities/message.entity");
 let DatabaseModule = class DatabaseModule {
 };
 DatabaseModule = __decorate([
@@ -26,9 +27,7 @@ DatabaseModule = __decorate([
                     username: configService.get('POSTGRES_USER'),
                     password: configService.get('POSTGRES_PASSWORD'),
                     database: configService.get('POSTGRES_DB'),
-                    entities: [
-                        client_entity_1.Client
-                    ],
+                    entities: [client_entity_1.Client, message_entity_1.default],
                     synchronize: true,
                 }),
             }),

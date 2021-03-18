@@ -20,9 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ac0860e-0d8c-4331-8a97-2133a290306a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/infrastructure/data-source/entities/message.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/api/chat.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/api/chat.module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/api/chat.module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/api/chat.module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/api/gateways/chat.gateway.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/api/gateways/chat.gateway.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/api/gateways/chat.gateway.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/api/gateways/chat.gateway.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/api/gateways/chat.gateway.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/api/gateways/chat.gateway.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/core/primary-ports/chat.service.interface.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/core/primary-ports/chat.service.interface.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/core/services/chat.service.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/core/services/chat.service.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/core/services/chat.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/core/services/chat.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/core/services/chat.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/core/services/chat.service.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infrastructure/data-source/entities/client.entity.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infrastructure/data-source/entities/client.entity.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infrastructure/data-source/entities/client.entity.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infrastructure/data-source/entities/client.entity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infrastructure/data-source/entities/client.entity.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infrastructure/data-source/entities/client.entity.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infrastructure/data-source/postgres/database.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infrastructure/data-source/postgres/database.module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infrastructure/data-source/postgres/database.module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infrastructure/data-source/postgres/database.module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/chat.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/chat.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/gateways/chat.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/gateways/chat.gateway.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/primary-ports/chat.service.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/primary-ports/chat.service.interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/services/chat.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/services/chat.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/data-source/postgres/database.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/data-source/postgres/database.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +99,7 @@
       <updated>1615659490489</updated>
       <workItem from="1615659491673" duration="3551000" />
       <workItem from="1615669572417" duration="968000" />
-      <workItem from="1615731843369" duration="18134000" />
+      <workItem from="1615731843369" duration="32247000" />
     </task>
     <servers />
   </component>
@@ -100,6 +121,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1616075476657">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1616075476657" />
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615747339284">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

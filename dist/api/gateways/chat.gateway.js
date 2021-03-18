@@ -47,21 +47,20 @@ let ChatGateway = class ChatGateway {
             this.server.emit('clientTyping', chatClient);
         }
     }
-    handleNicknameEvent(nickname, client) {
+    async handleNicknameEvent(nickname, client) {
         try {
-            this.chatService.addClient(client.id, nickname)
-                .subscribe((chatClient) => {
-                const welcome = {
-                    clients: this.chatService.getClients(),
-                    messages: this.chatService.getMessages(),
-                    client: chatClient,
-                };
-                client.emit('welcome', welcome);
-                this.server.emit('clients', this.chatService.getClients());
-            });
+            const chatClient = await this.chatService.addClient(client.id, nickname);
+            console.log('chatClient', chatClient);
+            const welcome = {
+                clients: this.chatService.getClients(),
+                messages: this.chatService.getMessages(),
+                client: chatClient,
+            };
+            client.emit('welcome', welcome);
+            this.server.emit('clients', this.chatService.getClients());
         }
         catch (e) {
-            client.emit('chat-error', { error: e.message });
+            client.error(e.message);
         }
     }
     handleConnection(client, ...args) {
@@ -101,7 +100,7 @@ __decorate([
     __param(1, websockets_1.ConnectedSocket()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String, Object]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], ChatGateway.prototype, "handleNicknameEvent", null);
 ChatGateway = __decorate([
     websockets_1.WebSocketGateway(),

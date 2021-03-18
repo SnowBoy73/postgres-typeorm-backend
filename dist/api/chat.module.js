@@ -13,11 +13,12 @@ const chat_service_1 = require("../core/services/chat.service");
 const chat_service_interface_1 = require("../core/primary-ports/chat.service.interface");
 const typeorm_1 = require("@nestjs/typeorm");
 const client_entity_1 = require("../infrastructure/data-source/entities/client.entity");
+const message_entity_1 = require("../infrastructure/data-source/entities/message.entity");
 let ChatModule = class ChatModule {
 };
 ChatModule = __decorate([
     common_1.Module({
-        imports: [typeorm_1.TypeOrmModule.forFeature([client_entity_1.default])],
+        imports: [typeorm_1.TypeOrmModule.forFeature([client_entity_1.default, message_entity_1.default])],
         providers: [
             chat_gateway_1.ChatGateway,
             {
