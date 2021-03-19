@@ -1572,18 +1572,18 @@
         "affectsGlobalScope": false
       },
       "../src/api/dtos/welcome.dto.ts": {
-        "version": "f4a8ec7de83c2fb4f3e682bc3213e53085d5f2534a184b78417a67fb89670926",
-        "signature": "664b62dafb89a9b757b4097b54d5bb2b7cc5319a73efb9eefca0f036ca6902cf",
+        "version": "c3d6313f6be4068ac920e08f0f0c37a61d7e10b6fa7babf6e63c448a84d8b0a3",
+        "signature": "7fc06891a97032f18e35d0e60eb86a9bb1ff826a5590b0779f36ce0710750c08",
         "affectsGlobalScope": false
       },
       "../src/core/primary-ports/chat.service.interface.ts": {
-        "version": "f686507e8c3909a0ec6a0227dc5ffe388c5fd0278ad61a23a32455a682170ffc",
-        "signature": "31d4c56dd61a7c353bd5960287f07063facb2cb1cb3f30dd72da229878714799",
+        "version": "0fad6e5368fe60eb2ed585184dadd2472dcb0b66305e4750c3f8008ae40464fd",
+        "signature": "7f0745782ffd2c98b72ed0a604ddb329f11ce7f3c7578d003031f6d0ddff25bf",
         "affectsGlobalScope": false
       },
       "../src/api/gateways/chat.gateway.ts": {
-        "version": "913d0930fa54241f4b47c3c3ec4d88a5bedfc3398c39a9aef083afc5491694c7",
-        "signature": "26ea1700e7c261aef90faaaa3a65fa9170e958e8665961515f8decfe6528a7c8",
+        "version": "c18c7141dce1729ba5c5a6eec632ba938e88c6c19b6e4d0686842c3a97503dd0",
+        "signature": "a1e79bf61cc34305598b9b4cfc8e3a2d4a3863b6215f0525baa245ce8a13a41a",
         "affectsGlobalScope": false
       },
       "../node_modules/typeorm/schema-builder/options/tablecolumnoptions.d.ts": {
@@ -3952,8 +3952,8 @@
         "affectsGlobalScope": false
       },
       "../src/core/services/chat.service.ts": {
-        "version": "b397756b6fce0fdc7211241eb08641077d324c8a56de41f475623ab094299a19",
-        "signature": "58772aaaa5cf740a00af5f29ecf33b19e1dbf69dc24ed03f38b267997684a300",
+        "version": "2ef087d7a4d02b5fe5e14493e4e8c66300d8ea8980a782e95bfde1b9052aec1f",
+        "signature": "5fad1a4f0121c3abd63e25d68355d469547bef9504f197a32bf46b4d831feb8e",
         "affectsGlobalScope": false
       },
       "../src/api/chat.module.ts": {
