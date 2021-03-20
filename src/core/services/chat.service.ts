@@ -103,6 +103,7 @@ export class ChatService implements IChatService {
 
   async getMessages(): Promise<ChatMessage[]> {
       const messages = await this.messageRepository.find();
+      console.log('Messages = ', messages);
       const chatMessages: ChatMessage[] = JSON.parse(JSON.stringify(messages));
       return chatMessages;
   }

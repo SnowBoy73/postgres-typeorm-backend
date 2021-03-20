@@ -61,6 +61,7 @@ let ChatService = class ChatService {
     }
     async getMessages() {
         const messages = await this.messageRepository.find();
+        console.log('Messages = ', messages);
         const chatMessages = JSON.parse(JSON.stringify(messages));
         return chatMessages;
     }

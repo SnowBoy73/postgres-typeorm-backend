@@ -3952,7 +3952,7 @@
         "affectsGlobalScope": false
       },
       "../src/core/services/chat.service.ts": {
-        "version": "2ef087d7a4d02b5fe5e14493e4e8c66300d8ea8980a782e95bfde1b9052aec1f",
+        "version": "b465d0b38b1353aa3ba383979e68b9cdf92088644cc96bb2ebf3c5eeb3523698",
         "signature": "5fad1a4f0121c3abd63e25d68355d469547bef9504f197a32bf46b4d831feb8e",
         "affectsGlobalScope": false
       },
