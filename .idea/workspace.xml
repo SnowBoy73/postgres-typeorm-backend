@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ac0860e-0d8c-4331-8a97-2133a290306a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/core/services/chat.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/core/services/chat.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/core/services/chat.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/core/services/chat.service.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/services/chat.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/services/chat.service.ts" afterDir="false" />
-    </list>
+    <list default="true" id="0ac0860e-0d8c-4331-8a97-2133a290306a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +80,7 @@
       <workItem from="1616155100331" duration="225000" />
       <workItem from="1616157666079" duration="3745000" />
       <workItem from="1616167677936" duration="27000" />
-      <workItem from="1616169543193" duration="5475000" />
+      <workItem from="1616169543193" duration="5710000" />
     </task>
     <servers />
   </component>
